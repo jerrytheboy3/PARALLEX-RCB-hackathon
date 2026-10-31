@@ -1,0 +1,578 @@
+[
+  {
+    "id": "SYN-001",
+    "type": "sms",
+    "sender": "+91-9880011223",
+    "text": "Dear Customer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill. Update via http://192.168.1.55/bescom-pay immediately.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "BESCOM",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-002",
+    "type": "sms",
+    "sender": "VK-ALERT",
+    "text": "Nimma bank account block aagide. Details verify madalu ee link click madi: http://bit.ly/sbi-kyc-update",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-003",
+    "type": "email",
+    "sender": "no-reply@onlinesbi.sbi",
+    "text": "Your monthly e-statement for October 2026 is ready. Log in to your net banking portal directly at onlinesbi.sbi to view your account activity.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "SBI"
+  },
+  {
+    "id": "SYN-004",
+    "type": "email",
+    "sender": "security@sbi-online-portal-update.com",
+    "text": "URGENT: Unauthorized login detected from unfamiliar device. Send your OTP and password immediately to reset your credentials within 1 hour.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-005",
+    "type": "sms",
+    "sender": "VM-BESCOM",
+    "text": "BESCOM: Scheduled power maintenance in Indiranagar tomorrow from 10 AM to 2 PM. Inconvenience is regretted.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "BESCOM"
+  },
+  {
+    "id": "SYN-006",
+    "type": "sms",
+    "sender": "9845012345",
+    "text": "KPTCL Alert: Bill balance pending. Power disconnect aaguthe 2 hours nalli. Stop madalu 9845012345@upi ge pay madi.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "KPTCL",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-007",
+    "type": "sms",
+    "sender": "+91-9123456789",
+    "text": "Your parcel IND-9021 cannot be delivered due to incorrect pincode. Click http://indiapost-parcel-redirection.xyz to pay Rs 25 redelivery fee.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "India Post",
+    "scamType": "courier"
+  },
+  {
+    "id": "SYN-008",
+    "type": "sms",
+    "sender": "AX-INDPOST",
+    "text": "Consignment EK123456789IN delivered to your address on 30-Oct-2026. Thank you for using India Post.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "India Post"
+  },
+  {
+    "id": "SYN-009",
+    "type": "sms",
+    "sender": "VK-TRAFFIC",
+    "text": "Traffic Police: Nimma vehicle munde pending e-challan ide. Lok Adalat 50% discount ge pay madi: http://ksp-echallan.top",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Bengaluru Police",
+    "scamType": "fake_police"
+  },
+  {
+    "id": "SYN-010",
+    "type": "sms",
+    "sender": "AD-HDFCBK",
+    "text": "Rs 1,450.00 spent on your HDFC Card ending 4012 at Grocery Mart on 30-Oct-26. Available balance Rs 45,200.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "HDFC Bank"
+  },
+  {
+    "id": "SYN-011",
+    "type": "sms",
+    "sender": "9900112233",
+    "text": "Part time job offer: Daily earn Rs 3000-5000 online typing work. Start madalu Telegram search @earndaily_blr immediately.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Amazon",
+    "scamType": "job"
+  },
+  {
+    "id": "SYN-012",
+    "type": "email",
+    "sender": "billing@bescom.karnataka.gov.in",
+    "text": "Your electricity bill for Account 04291823 is Rs 1,240. Due date is 10-Nov-2026. Pay safely at bescom.karnataka.gov.in.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "BESCOM"
+  },
+  {
+    "id": "SYN-013",
+    "type": "sms",
+    "sender": "+91-9740012345",
+    "text": "Income Tax Refund approved of Rs 15,400. Update your bank account and PAN details here: http://incometax-refund-gov.in/claim",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "Income Tax",
+    "scamType": "refund"
+  },
+  {
+    "id": "SYN-014",
+    "type": "email",
+    "sender": "donotreply@incometax.gov.in",
+    "text": "Your Income Tax Return for AY 2026-27 has been successfully verified. Acknowledgement number is 4492019283.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Income Tax"
+  },
+  {
+    "id": "SYN-015",
+    "type": "sms",
+    "sender": "9886001122",
+    "text": "Urgent BESCOM notice: Bill kattilla andre current cut aaguthe. Officer number 9886001122 ge call madi.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "BESCOM",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-016",
+    "type": "sms",
+    "sender": "BP-AIRTEL",
+    "text": "Your Airtel SIM card will be deactivated within 24 hours due to non-KYC submission. Call customer executive on 9123443210 immediately.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "Airtel",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-017",
+    "type": "sms",
+    "sender": "AX-AIRTEL",
+    "text": "Recharge of Rs 299 successful for your Airtel mobile number. Data: 1.5GB/day, Unlimited Calls. Validity: 28 Days.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Airtel"
+  },
+  {
+    "id": "SYN-018",
+    "type": "sms",
+    "sender": "9448011234",
+    "text": "Dear user, SBI reward points worth Rs 4,500 expiring today. Cash redeem madalu click madi: http://sbi-rewards-gift.xyz",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "lottery"
+  },
+  {
+    "id": "SYN-019",
+    "type": "sms",
+    "sender": "VK-ICICIB",
+    "text": "ICICI Alert: Your NetBanking access has been suspended due to security reasons. Unlock instantly at http://192.168.0.4/icici-login",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "ICICI Bank",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-020",
+    "type": "sms",
+    "sender": "VM-ICICIB",
+    "text": "OTP for transaction of Rs 500 at Fuel Station is 4921. Valid for 3 mins. Never share OTP with anyone.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "ICICI Bank"
+  },
+  {
+    "id": "SYN-021",
+    "type": "email",
+    "sender": "admin@bescom-karnataka-support.com",
+    "text": "FINAL REMINDER: Indiranagar consumer division outstanding bill Rs 4,820. Disconnection order issued. Clear immediately at http://bescom-paybill.top",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "BESCOM",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-022",
+    "type": "email",
+    "sender": "alerts@hdfcbank.net",
+    "text": "Security Update: Update your pan card and net banking password within 2 hours or card will be blocked permanently: http://tinyurl.com/hdfc-kyc-fix",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "HDFC Bank",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-023",
+    "type": "email",
+    "sender": "updates@hdfcbank.com",
+    "text": "Your monthly credit card statement for October 2026 has been dispatched to your registered email address.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "HDFC Bank"
+  },
+  {
+    "id": "SYN-024",
+    "type": "sms",
+    "sender": "9731001122",
+    "text": "Jio 5G Offer: 3 months free recharge activate madalu link click madi: http://jio-free-5g.cc",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Jio",
+    "scamType": "lottery"
+  },
+  {
+    "id": "SYN-025",
+    "type": "sms",
+    "sender": "AX-JIOINF",
+    "text": "Your daily high speed data quota of 1.5GB is 90% exhausted. Upgrade pack using the MyJio app.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Jio"
+  },
+  {
+    "id": "SYN-026",
+    "type": "sms",
+    "sender": "+91-9844001199",
+    "text": "Notice: Vehicle KA-01-AB-1234 speeding violation fine Rs 1,000. Pay within 24 hours to avoid court warrant: http://bangalorepolice-fine.click",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "Bengaluru Police",
+    "scamType": "fake_police"
+  },
+  {
+    "id": "SYN-027",
+    "type": "sms",
+    "sender": "VM-BLRPOL",
+    "text": "Karnataka State Police advisory: Never share OTP or UPI PIN with unknown callers. Stay vigilant against cyber fraud.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Bengaluru Police"
+  },
+  {
+    "id": "SYN-028",
+    "type": "sms",
+    "sender": "VK-KREDIT",
+    "text": "Loan approved Rs 50,000. Turthu money transfer agalu ee link open madi: http://bit.ly/quick-cash-loan",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "KreditBee",
+    "scamType": "loan"
+  },
+  {
+    "id": "SYN-029",
+    "type": "sms",
+    "sender": "BW-SWIGGY",
+    "text": "Your Swiggy order from Corner House has been picked up by delivery partner Ramesh. Track live in Swiggy app.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Swiggy"
+  },
+  {
+    "id": "SYN-030",
+    "type": "sms",
+    "sender": "+91-9663001100",
+    "text": "BlueDart: Address missing for shipment 98201923. Update address and pay re-routing charge Rs 15 at http://bluedart-tracking-portal.com",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "BlueDart",
+    "scamType": "courier"
+  },
+  {
+    "id": "SYN-031",
+    "type": "sms",
+    "sender": "9741002233",
+    "text": "PhonePe lottery: Congratulation! Rs 1,999 cashback win madiddiri. Scratch card open madi: http://phonepe-rewards.top",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "PhonePe",
+    "scamType": "lottery"
+  },
+  {
+    "id": "SYN-032",
+    "type": "sms",
+    "sender": "AX-PHONEPE",
+    "text": "Paid Rs 350 to Green Grocers via PhonePe UPI. Transaction ID T26103019482.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "PhonePe"
+  },
+  {
+    "id": "SYN-033",
+    "type": "email",
+    "sender": "support@indiapost-gov.in.delivery-track.com",
+    "text": "Delivery Attempt Failed: Import duties pending Rs 42. Please visit our tracking center to release shipment.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "India Post",
+    "scamType": "courier"
+  },
+  {
+    "id": "SYN-034",
+    "type": "email",
+    "sender": "no-reply@bescom.karnataka.gov.in",
+    "text": "Receipt acknowledgement: Payment of Rs 1,240 received for Consumer Account 04291823. Transaction successful.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "BESCOM"
+  },
+  {
+    "id": "SYN-035",
+    "type": "sms",
+    "sender": "9844112233",
+    "text": "Current disconnect aagutte eega call madi officer Ramesh 9844112233. Unpaid electricity bill update madi.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "KPTCL",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-036",
+    "type": "sms",
+    "sender": "+91-9008001122",
+    "text": "Axis Bank Alert: KYC verification pending. Complete Aadhaar linking at http://192.168.10.15/axis to avoid debit freeze.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "Axis Bank",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-037",
+    "type": "sms",
+    "sender": "AX-AXISBK",
+    "text": "Salary credit of Rs 65,000 to Account ending 8912 on 30-Oct-2026. Available balance Rs 72,400.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Axis Bank"
+  },
+  {
+    "id": "SYN-038",
+    "type": "sms",
+    "sender": "9632001122",
+    "text": "Work from home: YouTube videos like madi daily 2000 earn madi. WhatsApp message madi: https://wa.me/919632001122",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "WhatsApp",
+    "scamType": "job"
+  },
+  {
+    "id": "SYN-039",
+    "type": "sms",
+    "sender": "VK-AMAZON",
+    "text": "Your package with order 402-9182912-192 is out for delivery today. Share delivery code 4821 with driver upon arrival.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Amazon"
+  },
+  {
+    "id": "SYN-040",
+    "type": "email",
+    "sender": "service@onlinesbi-kyc-center.in",
+    "text": "Dear Account Holder, your debit card access is frozen due to missing PAN card details. Submit verification form immediately: http://onlinesbi-kyc-center.in",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-041",
+    "type": "sms",
+    "sender": "+91-9110011223",
+    "text": "Alert: Power supply will be disconnected at 8:00 PM tonight due to unpaid dues of Rs 3,420. Contact nodal officer on 9110011223.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "BESCOM",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-042",
+    "type": "sms",
+    "sender": "VK-GOVT",
+    "text": "Gruha Jyothi: Nimma free electricity subsidy cancel aagide. Re-apply madalu ee link click madi: http://sevasindhu-karnataka.xyz",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Karnataka Govt",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-043",
+    "type": "sms",
+    "sender": "VM-KSPADL",
+    "text": "Dial 112 for any emergency in Karnataka. Single emergency number for Police, Fire, and Ambulance.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Karnataka Police"
+  },
+  {
+    "id": "SYN-044",
+    "type": "sms",
+    "sender": "+91-9886112233",
+    "text": "FedEx shipment 8819231 held at Bangalore airport customs due to contraband packaging. Pay clearance charge Rs 1,500 immediately: http://fedex-customs-clear.com",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "FedEx",
+    "scamType": "fake_police"
+  },
+  {
+    "id": "SYN-045",
+    "type": "sms",
+    "sender": "AX-FEDEX",
+    "text": "Your package 781920192 has been delivered at the front door. Signed by Security.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "FedEx"
+  },
+  {
+    "id": "SYN-046",
+    "type": "sms",
+    "sender": "9980001122",
+    "text": "Account temporary block aagide. Unlock madalu OTP share madi 9980001122 ge.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-047",
+    "type": "sms",
+    "sender": "AD-SBINB",
+    "text": "Dear Customer, your NetBanking password was changed successfully on 30-Oct-2026. If not done by you, call 1800112211.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "SBI"
+  },
+  {
+    "id": "SYN-048",
+    "type": "sms",
+    "sender": "+91-9742001122",
+    "text": "URGENT: Outstanding power bill balance. Electrical line will be cut off within 1 hour. Pay now: http://bit.ly/kptcl-quick-bill",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "KPTCL",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-049",
+    "type": "sms",
+    "sender": "9845223344",
+    "text": "Traffic fine pending. Police station ge barabeku court notice barathe. 500 fine kattalu: http://tinyurl.com/ksp-challan",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Bengaluru Police",
+    "scamType": "fake_police"
+  },
+  {
+    "id": "SYN-050",
+    "type": "sms",
+    "sender": "BW-ZOMATO",
+    "text": "Order delivered: Enjoy your meal! Rate your delivery partner Mohan in the Zomato app.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Zomato"
+  },
+  {
+    "id": "SYN-051",
+    "type": "email",
+    "sender": "security-check@hdfc-portal-update.org",
+    "text": "High Risk Warning: We detected fraudulent activity on your account. Send your internet banking user ID and OTP to restore access.",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "HDFC Bank",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-052",
+    "type": "sms",
+    "sender": "9916001122",
+    "text": "Current bill update aagilla. Disconnection stop madalu ee number ge phone pay madi 9916001122.",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "BESCOM",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-053",
+    "type": "sms",
+    "sender": "AX-ICICIB",
+    "text": "Your auto-debit of Rs 2,500 towards broadband bill has been scheduled for 05-Nov-2026.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "ICICI Bank"
+  },
+  {
+    "id": "SYN-054",
+    "type": "sms",
+    "sender": "+91-9538001122",
+    "text": "India Post Notice: Address mismatch for consignment. Pay Rs 18 handling fee to confirm delivery: http://192.168.1.100/post",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "India Post",
+    "scamType": "courier"
+  },
+  {
+    "id": "SYN-055",
+    "type": "sms",
+    "sender": "VK-WINNER",
+    "text": "Paytm Scratch Card: Congratulations! 5000 cashback win madiddiri. UPI pin enter madi claim madi: http://paytm-cashback.top",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "Paytm",
+    "scamType": "lottery"
+  },
+  {
+    "id": "SYN-056",
+    "type": "sms",
+    "sender": "VM-PAYTM",
+    "text": "Payment of Rs 120 to Chai Point successful via Paytm UPI.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "Paytm"
+  },
+  {
+    "id": "SYN-057",
+    "type": "email",
+    "sender": "alerts@bescom.karnataka.gov.in",
+    "text": "Dear Indiranagar resident, power scheduled outage tomorrow 11 AM - 1 PM for transformer upgrade.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "BESCOM"
+  },
+  {
+    "id": "SYN-058",
+    "type": "sms",
+    "sender": "9686001122",
+    "text": "Bill due amount 2450 ide. Power cut aagade iralu turthu pay madi: http://bit.ly/kptcl-pay",
+    "lang": "kanglish",
+    "label": "scam",
+    "claimedOrg": "KPTCL",
+    "scamType": "electricity"
+  },
+  {
+    "id": "SYN-059",
+    "type": "sms",
+    "sender": "+91-9611001122",
+    "text": "SBI Security Alert: Unauthorized transaction attempted of Rs 49,999. Cancel transaction immediately by visiting: http://sbi-fraud-cancellation.xyz",
+    "lang": "en",
+    "label": "scam",
+    "claimedOrg": "SBI",
+    "scamType": "kyc"
+  },
+  {
+    "id": "SYN-060",
+    "type": "sms",
+    "sender": "AX-SBIINB",
+    "text": "Dear Customer, your Mandate of Rs 500 for SIP investment is due on 02-Nov-2026.",
+    "lang": "en",
+    "label": "normal",
+    "claimedOrg": "SBI"
+  }
+]

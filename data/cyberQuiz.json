@@ -1,0 +1,2138 @@
+{
+ "version": 1,
+ "categories": {
+  "email": "Email phishing & spoofed senders",
+  "sms": "SMS / smishing",
+  "upi": "UPI scams",
+  "support": "Fake customer care & remote access",
+  "arrest": "Digital arrest & fake police",
+  "jobs": "Job & task scams",
+  "invest": "Investment & trading scams",
+  "social": "Social media impersonation",
+  "romance": "Romance & sextortion",
+  "sim": "OTP, SIM & call-forwarding tricks",
+  "passwords": "Passwords, 2FA & recovery",
+  "devices": "Public Wi-Fi, USB & malicious apps",
+  "new": "New techniques (AI, quishing, MFA fatigue…)",
+  "after": "What to do after a scam"
+ },
+ "questions": [
+  {
+   "id": "q001",
+   "category": "email",
+   "difficulty": "easy",
+   "scenario": "An email from \"SBI Alerts <alerts@sbi-secure-kyc.com>\" says your account will be frozen in 24 hours unless you update KYC through the link inside.",
+   "question": "What should you do?",
+   "options": [
+    "Ignore the link; open the YONO app or onlinesbi.sbi yourself and check for alerts",
+    "Reply asking them to confirm it is really SBI",
+    "Forward it to friends to ask if it looks real",
+    "Click the link quickly so the account isn't frozen"
+   ],
+   "correctIndex": 0,
+   "explanation": "SBI's real domains are sbi.co.in and onlinesbi.sbi — 'sbi-secure-kyc.com' is a lookalike. Checking in the official app shows any genuine alert. Clicking is the tempting mistake: the page is built to steal your login and OTP.",
+   "redFlags": [
+    "lookalike domain",
+    "24-hour deadline",
+    "KYC via link"
+   ]
+  },
+  {
+   "id": "q002",
+   "category": "email",
+   "difficulty": "medium",
+   "scenario": "You get an invoice email from \"accounts@paypa1.com\" saying ₹18,499 was charged for a laptop you never bought, with a 'Cancel order' button.",
+   "question": "What is the safest move?",
+   "options": [
+    "Call the number in the email footer",
+    "Log in to PayPal by typing paypal.com yourself and check your activity",
+    "Reply with your card's last 4 digits so they can find the order",
+    "Press 'Cancel order' to stop the charge"
+   ],
+   "correctIndex": 1,
+   "explanation": "'paypa1' swaps the letter l for the digit 1 — typosquatting. Your real account will show any real charge. The 'Cancel' button is the trap: it leads to a fake login page or a fake refund call.",
+   "redFlags": [
+    "typosquat (1 for l)",
+    "fake charge to scare you",
+    "action button"
+   ]
+  },
+  {
+   "id": "q003",
+   "category": "email",
+   "difficulty": "hard",
+   "scenario": "Your manager's name appears as the sender, but the address is manager.name@gmail.com. The email asks you to urgently buy ₹20,000 of Amazon gift cards for a client and send the codes.",
+   "question": "How do you respond?",
+   "options": [
+    "Send half the codes first to be safe",
+    "Reply to the email asking for written approval",
+    "Verify by calling your manager on their known number or messaging on the office chat",
+    "Buy the cards — the manager is busy and asked nicely"
+   ],
+   "correctIndex": 2,
+   "explanation": "This is CEO/boss fraud. Verifying on a channel you already trust stops it instantly. Replying to the email feels careful but goes straight back to the scammer, who will happily 'approve' it.",
+   "redFlags": [
+    "display name ≠ address",
+    "gift card codes",
+    "urgency + secrecy"
+   ]
+  },
+  {
+   "id": "q004",
+   "category": "email",
+   "difficulty": "medium",
+   "scenario": "An email says 'Your Microsoft 365 password expires today' and shows the Microsoft logo. The link text reads microsoft.com, but hovering shows login-micros0ft-verify.top.",
+   "question": "What does the hover tell you?",
+   "options": [
+    "Nothing — logos prove it's real",
+    "It's fine because the visible text says microsoft.com",
+    "It's a Microsoft server in another country",
+    "The real destination is a fake site — don't click; change the password from the official settings if needed"
+   ],
+   "correctIndex": 3,
+   "explanation": "Link text can say anything; the real destination is what the hover shows. '.top' and 'micros0ft' are classic signs. Trusting the visible text or the logo is the mistake — both are copied in seconds.",
+   "redFlags": [
+    "hover shows a different domain",
+    "password-expiry pressure",
+    "digit swap in brand"
+   ]
+  },
+  {
+   "id": "q005",
+   "category": "email",
+   "difficulty": "easy",
+   "scenario": "An email from 'Income Tax Department' says a refund of ₹14,860 is approved and asks you to download an attached file 'Refund_Form.zip' to claim it.",
+   "question": "What should you do?",
+   "options": [
+    "Delete it; check refunds only on incometax.gov.in after logging in yourself",
+    "Reply with your PAN so they can process it",
+    "Forward to your CA and open it later",
+    "Open the zip to see the form"
+   ],
+   "correctIndex": 0,
+   "explanation": "Refunds go automatically to your bank account and are visible on the e-filing portal — no form or attachment needed. Opening a zip from a stranger is the dangerous step: it often contains malware.",
+   "redFlags": [
+    "refund bait",
+    "zip attachment",
+    "government impersonation"
+   ]
+  },
+  {
+   "id": "q006",
+   "category": "email",
+   "difficulty": "hard",
+   "scenario": "A supplier you really work with emails: 'We changed banks. Please pay this month's invoice to our new account below.' The email address looks exactly right.",
+   "question": "What is the right step before paying?",
+   "options": [
+    "Pay a small test amount to the new account first",
+    "Call the supplier on the phone number you already have on file to confirm the change",
+    "Ask them to send the new details again in a PDF",
+    "Pay — the address is correct"
+   ],
+   "correctIndex": 1,
+   "explanation": "Business email compromise uses real, hacked mailboxes, so the address can be genuine. A call to a number you already know confirms it. A 'test payment' still sends money to the scammer.",
+   "redFlags": [
+    "bank details changed by email",
+    "invoice pressure",
+    "compromised real mailbox"
+   ]
+  },
+  {
+   "id": "q007",
+   "category": "email",
+   "difficulty": "medium",
+   "scenario": "An email from 'Amazon' says your account is locked. The sender shows as 'Amazon Support <no-reply@amazon.in.account-review.co>'.",
+   "question": "Which part of the address is the real domain?",
+   "options": [
+    "Amazon Support",
+    "amazon.in",
+    "account-review.co",
+    "no-reply"
+   ],
+   "correctIndex": 2,
+   "explanation": "Read domains from the right: the real domain is the last two parts before the path — 'account-review.co'. 'amazon.in' placed earlier is just a subdomain anyone can make. Trusting the first familiar word is how most people get caught.",
+   "redFlags": [
+    "brand in subdomain",
+    "account locked scare",
+    "display name trick"
+   ]
+  },
+  {
+   "id": "q008",
+   "category": "email",
+   "difficulty": "easy",
+   "scenario": "A college email says 'Your scholarship of ₹50,000 is approved. Pay ₹999 processing fee to release it' and gives a UPI ID.",
+   "question": "What's the best response?",
+   "options": [
+    "Share the email in your class group so others can pay too",
+    "Pay and keep the screenshot as proof",
+    "Pay the ₹999 — it's small compared to ₹50,000",
+    "Ask the college office directly through its official website or in person"
+   ],
+   "correctIndex": 3,
+   "explanation": "Real scholarships never ask you to pay to receive money. Confirming with the college directly settles it. 'It's only ₹999' is the trap — after the first fee come more fees.",
+   "redFlags": [
+    "pay to receive",
+    "small fee for big reward",
+    "UPI to a person"
+   ]
+  },
+  {
+   "id": "q009",
+   "category": "sms",
+   "difficulty": "easy",
+   "scenario": "SMS from +91 98XXX XXXXX: 'BESCOM: Your power will be disconnected tonight at 9:30 PM due to unpaid bill. Call officer 98XXXXXXXX immediately.'",
+   "question": "What should you do?",
+   "options": [
+    "Check your bill in the official BESCOM app/website or call the number printed on your bill",
+    "Reply 'PAID' to stop the disconnection",
+    "Call the officer number right away",
+    "Pay through the link the officer sends"
+   ],
+   "correctIndex": 0,
+   "explanation": "Electricity boards send notices from registered IDs, not personal mobiles, and never disconnect within hours by SMS. Calling the 'officer' leads to a screen-sharing app or a fake payment link.",
+   "redFlags": [
+    "personal mobile sender",
+    "same-night deadline",
+    "call this officer"
+   ]
+  },
+  {
+   "id": "q010",
+   "category": "sms",
+   "difficulty": "easy",
+   "scenario": "'India Post: Your parcel is on hold due to incomplete address. Update and pay ₹25 at http://indiapost-redelivery.top within 12 hours.'",
+   "question": "Is this real?",
+   "options": [
+    "Yes — ₹25 is a normal redelivery fee",
+    "No — India Post's site is indiapost.gov.in; track only by typing it yourself",
+    "Yes, if you were expecting a parcel",
+    "Maybe — pay and see if the parcel arrives"
+   ],
+   "correctIndex": 1,
+   "explanation": "The '.top' address is not India Post's. Small fees are used to collect your card details, which are then charged for much more. Expecting a parcel is exactly what makes this feel real.",
+   "redFlags": [
+    "fake .top domain",
+    "tiny fee",
+    "12-hour deadline"
+   ]
+  },
+  {
+   "id": "q011",
+   "category": "sms",
+   "difficulty": "medium",
+   "scenario": "SMS from 'VK-SBIALR': 'Your YONO account is blocked. Update PAN at bit.ly/sbi-yono-pan to unblock.'",
+   "question": "The sender looks like a bank ID. Should you trust it?",
+   "options": [
+    "Yes, letters-only IDs are always banks",
+    "Yes, because it mentions YONO",
+    "No — banks never send PAN-update links; check only inside the official app",
+    "Click, but don't enter the OTP"
+   ],
+   "correctIndex": 2,
+   "explanation": "Scammers also get letter IDs or spoof them; what matters is the request. A shortened link hiding the real site plus 'blocked' is a classic KYC scam. 'Click but don't enter the OTP' still exposes your login and phone.",
+   "redFlags": [
+    "shortened link",
+    "account blocked",
+    "PAN/KYC update"
+   ]
+  },
+  {
+   "id": "q012",
+   "category": "sms",
+   "difficulty": "easy",
+   "scenario": "'482913 is your OTP for a transaction of ₹24,999 at Croma. Do not share it with anyone. -HDFC Bank' — but you are not buying anything.",
+   "question": "What does this mean and what do you do?",
+   "options": [
+    "It's a mistake — ignore it",
+    "Reply with the OTP to cancel the transaction",
+    "Wait for the bank to call you and give them the OTP",
+    "Someone is trying to use your card — never share the OTP and call the number on your card to block it"
+   ],
+   "correctIndex": 3,
+   "explanation": "An OTP you didn't request means someone has your card details. Blocking via the number on your card protects you. The trap is the follow-up 'bank' call asking for that OTP to 'cancel' — that call completes the theft.",
+   "redFlags": [
+    "OTP you didn't request",
+    "follow-up call asking for OTP"
+   ]
+  },
+  {
+   "id": "q013",
+   "category": "sms",
+   "difficulty": "medium",
+   "scenario": "'Dear customer, your electricity Gruha Jyothi subsidy is cancelled. Re-apply now: sevasindhu-karnataka.xyz'",
+   "question": "What's the giveaway?",
+   "options": [
+    "The .xyz domain — real government sites end in .gov.in or the department's official domain",
+    "The subsidy name",
+    "Nothing, it's genuine",
+    "The word 'Dear customer'"
+   ],
+   "correctIndex": 0,
+   "explanation": "Seva Sindhu is real, but government services live on gov.in domains. A '.xyz' address is a copy. Recognising a real scheme name makes people relax — that's why scammers use them.",
+   "redFlags": [
+    ".xyz domain",
+    "real scheme name used as bait",
+    "subsidy cancelled scare"
+   ]
+  },
+  {
+   "id": "q014",
+   "category": "sms",
+   "difficulty": "hard",
+   "scenario": "You get an SMS: 'Your Aadhaar-linked SIM will be deactivated in 2 hours due to non-KYC. Press 9 to talk to TRAI officer' and then an automated call arrives.",
+   "question": "What should you do?",
+   "options": [
+    "Give your Aadhaar number to verify",
+    "Hang up; TRAI does not disconnect SIMs by call — check with your operator via its official app",
+    "Ask the officer for an employee ID first",
+    "Press 9 and follow instructions"
+   ],
+   "correctIndex": 1,
+   "explanation": "TRAI doesn't call individuals to disconnect numbers. These calls escalate to fake police and 'digital arrest'. Asking for an employee ID feels clever, but scammers have fake IDs ready.",
+   "redFlags": [
+    "TRAI impersonation",
+    "2-hour deadline",
+    "press 9 robocall"
+   ]
+  },
+  {
+   "id": "q015",
+   "category": "sms",
+   "difficulty": "medium",
+   "scenario": "'Congratulations! You won ₹25,00,000 in KBC lucky draw. Call Rana Pratap 98XXXXXXXX to claim. Processing fee ₹4,999.'",
+   "question": "How do you handle it?",
+   "options": [
+    "Pay the fee — it's a famous show",
+    "Call to check if it's real",
+    "Ignore and delete — you can't win a draw you never entered",
+    "Ask them to deduct the fee from the prize"
+   ],
+   "correctIndex": 2,
+   "explanation": "There's no lottery you didn't enter. 'Deduct the fee from the prize' sounds smart but they'll always invent a reason you must pay first.",
+   "redFlags": [
+    "prize you never entered",
+    "pay to claim",
+    "famous brand used"
+   ]
+  },
+  {
+   "id": "q016",
+   "category": "sms",
+   "difficulty": "easy",
+   "scenario": "'Your Amazon order #402-1182 is out for delivery. Delivery code 4821 — share with the delivery agent on arrival.' You did order something.",
+   "question": "Is it okay to share this code?",
+   "options": [
+    "Yes, with anyone who calls asking for it",
+    "No, never share any code",
+    "Share it by SMS to the number that sent it",
+    "Yes, with the delivery agent at your door when you receive the parcel"
+   ],
+   "correctIndex": 3,
+   "explanation": "Delivery codes are meant for the agent physically handing over your parcel. It's different from a bank OTP. But a caller asking for it on the phone is a red flag.",
+   "redFlags": [
+    "code requested over phone",
+    "code asked by caller"
+   ]
+  },
+  {
+   "id": "q017",
+   "category": "upi",
+   "difficulty": "easy",
+   "scenario": "A buyer on OLX says: 'I'll pay ₹8,000 for your sofa. I've sent a request on PhonePe — just approve it and enter your PIN to receive the money.'",
+   "question": "What should you do?",
+   "options": [
+    "Decline — entering a UPI PIN always sends money, never receives it",
+    "Enter a wrong PIN first to test",
+    "Ask them to send the request again",
+    "Approve and enter PIN to get paid"
+   ],
+   "correctIndex": 0,
+   "explanation": "A 'collect request' pulls money from you. You never need a PIN to receive money. Approving it is exactly how sellers lose money on OLX and Facebook Marketplace.",
+   "redFlags": [
+    "collect request",
+    "PIN to receive",
+    "online buyer"
+   ]
+  },
+  {
+   "id": "q018",
+   "category": "upi",
+   "difficulty": "easy",
+   "scenario": "Someone sends you a QR code on WhatsApp: 'Scan this to receive ₹5,000 cashback from Paytm.'",
+   "question": "What happens if you scan and enter your PIN?",
+   "options": [
+    "You receive ₹5,000",
+    "Money leaves your account to the scammer",
+    "Nothing happens",
+    "Your cashback gets doubled"
+   ],
+   "correctIndex": 1,
+   "explanation": "Scanning a QR and entering your PIN only ever pays someone. Nobody needs to scan anything to send you money.",
+   "redFlags": [
+    "scan to receive",
+    "cashback bait"
+   ]
+  },
+  {
+   "id": "q019",
+   "category": "upi",
+   "difficulty": "medium",
+   "scenario": "A customer at your shop shows a screenshot of a ₹2,450 UPI payment 'successful', but your shop speaker didn't announce anything and they are in a hurry.",
+   "question": "What should you do?",
+   "options": [
+    "Accept it because they are in a hurry",
+    "Trust the screenshot — it has a transaction ID",
+    "Check your own UPI app or bank SMS for the credit before handing over goods",
+    "Ask them to send the screenshot again"
+   ],
+   "correctIndex": 2,
+   "explanation": "Fake payment screenshots are easy to make with apps. Only your own app or bank shows real money. Hurry is used to stop you from checking.",
+   "redFlags": [
+    "screenshot instead of credit",
+    "customer in a hurry",
+    "no sound-box alert"
+   ]
+  },
+  {
+   "id": "q020",
+   "category": "upi",
+   "difficulty": "medium",
+   "scenario": "You get ₹3,000 from an unknown number, then a call: 'Sorry, I sent it by mistake. Please return it to this other UPI ID.'",
+   "question": "What's the safest action?",
+   "options": [
+    "Send back to the same number immediately",
+    "Ignore and keep the money",
+    "Send ₹3,000 to the other UPI ID they give",
+    "Don't send to a new ID; tell them to raise a reversal with their bank, or report to your bank"
+   ],
+   "correctIndex": 3,
+   "explanation": "The 'accidental transfer' can be from a stolen account or a fake credit SMS; returning money to a different ID makes you part of the fraud. Banks can reverse genuine mistakes.",
+   "redFlags": [
+    "mistaken payment story",
+    "return to a different ID",
+    "pressure call"
+   ]
+  },
+  {
+   "id": "q021",
+   "category": "upi",
+   "difficulty": "hard",
+   "scenario": "'IRCTC refund of ₹1,860 is pending. To receive it, accept the collect request on Google Pay within 2 hours.'",
+   "question": "What's wrong here?",
+   "options": [
+    "Refunds never need you to accept a request or enter a PIN; they return automatically",
+    "The amount is too small to be a scam",
+    "Only the 2-hour limit is suspicious",
+    "Nothing — IRCTC uses Google Pay"
+   ],
+   "correctIndex": 0,
+   "explanation": "Ticket refunds go automatically to the account you paid from. A collect request is a payment from you. The real-sounding amount makes it believable.",
+   "redFlags": [
+    "refund via collect request",
+    "2-hour limit",
+    "IRCTC impersonation"
+   ]
+  },
+  {
+   "id": "q022",
+   "category": "upi",
+   "difficulty": "easy",
+   "scenario": "A caller from 'PhonePe support' says your KYC failed and asks you to tell them the 4-digit number that appears on your screen to fix it.",
+   "question": "What is that number likely to be?",
+   "options": [
+    "A harmless ticket number",
+    "Your UPI PIN or an OTP that lets them take money — never share it",
+    "A KYC code that is safe to share",
+    "A support reference number"
+   ],
+   "correctIndex": 1,
+   "explanation": "Support staff never need your PIN or OTP. Any code that appears 'on your screen' during such a call is what they need to take your money.",
+   "redFlags": [
+    "support calls you",
+    "code on your screen",
+    "KYC failed"
+   ]
+  },
+  {
+   "id": "q023",
+   "category": "upi",
+   "difficulty": "medium",
+   "scenario": "A parking-lot sticker has a QR code saying 'Pay parking here'. The QR opens a UPI payment to 'Ramesh K' instead of the city corporation.",
+   "question": "What should you do?",
+   "options": [
+    "Scan it again to get a different result",
+    "Pay — the sticker is on the official pole",
+    "Don't pay; use the attendant, the official app, or check the payee name matches the operator",
+    "Pay a smaller amount"
+   ],
+   "correctIndex": 2,
+   "explanation": "Scammers paste their own QR stickers over real ones. A personal payee name on an official service is the giveaway. Paying 'a smaller amount' still pays a scammer.",
+   "redFlags": [
+    "sticker over a QR",
+    "personal payee name"
+   ]
+  },
+  {
+   "id": "q024",
+   "category": "upi",
+   "difficulty": "hard",
+   "scenario": "After you complain on Twitter about a failed UPI payment, a profile named 'NPCI Support Help' replies with a WhatsApp number and asks you to install an app to 'track the refund'.",
+   "question": "What's the right move?",
+   "options": [
+    "Send them your transaction screenshot and PIN",
+    "Call the WhatsApp number to confirm",
+    "Install the app to get the refund faster",
+    "Raise the complaint inside your UPI app or bank app only; ignore replies from random support profiles"
+   ],
+   "correctIndex": 3,
+   "explanation": "Scammers watch public complaints and reply as 'support'. Official complaints go through your app's help section. The 'tracking app' is usually a screen-sharing app.",
+   "redFlags": [
+    "support reaches out to you",
+    "WhatsApp number",
+    "install an app"
+   ]
+  },
+  {
+   "id": "q025",
+   "category": "support",
+   "difficulty": "easy",
+   "scenario": "Your Swiggy order failed. You search 'Swiggy customer care number' and call the first number you see on a search result.",
+   "question": "Why is this risky?",
+   "options": [
+    "Scammers post fake helpline numbers online; use the Help section inside the app instead",
+    "The call will cost money",
+    "Customer care only works on weekdays",
+    "It isn't — search results are verified"
+   ],
+   "correctIndex": 0,
+   "explanation": "Fake customer-care numbers are planted on maps, ads and forums. Apps have built-in help. The first search result feels trustworthy but is often an ad or edited listing.",
+   "redFlags": [
+    "number from a search",
+    "edited map listing"
+   ]
+  },
+  {
+   "id": "q026",
+   "category": "support",
+   "difficulty": "medium",
+   "scenario": "A 'bank executive' on the phone says: 'To reverse the wrong debit, please install AnyDesk so I can guide you.'",
+   "question": "What should you do?",
+   "options": [
+    "Install AnyDesk — banks use it",
+    "Hang up; banks never ask you to install screen-sharing apps",
+    "Install but don't open your bank app",
+    "Give them the 9-digit AnyDesk code only"
+   ],
+   "correctIndex": 1,
+   "explanation": "Remote-access apps let the caller see and control your phone, including OTPs. 'Install but don't open the bank app' fails because they can watch every notification.",
+   "redFlags": [
+    "install AnyDesk/TeamViewer",
+    "refund reversal story"
+   ]
+  },
+  {
+   "id": "q027",
+   "category": "support",
+   "difficulty": "medium",
+   "scenario": "Your new courier delivery is late. A number on a 'courier help' website tells you to pay ₹5 via a link to 'reschedule delivery'.",
+   "question": "Why do they want just ₹5?",
+   "options": [
+    "To speed up delivery",
+    "It's a real small fee",
+    "To collect your card/UPI details and then make bigger payments",
+    "To verify your address"
+   ],
+   "correctIndex": 2,
+   "explanation": "Tiny payments get you to enter card details or a PIN on a fake page — which are then used to take much more. Real couriers don't charge to reschedule via random links.",
+   "redFlags": [
+    "tiny fee",
+    "payment link from helpline"
+   ]
+  },
+  {
+   "id": "q028",
+   "category": "support",
+   "difficulty": "hard",
+   "scenario": "A 'Microsoft technician' pop-up with a loud alarm says your laptop is infected and shows a toll-free number to call.",
+   "question": "What should you do?",
+   "options": [
+    "Pay for the antivirus they recommend",
+    "Let them connect remotely to check",
+    "Call the number immediately",
+    "Close the browser (Task Manager if needed) and never call numbers from pop-ups"
+   ],
+   "correctIndex": 3,
+   "explanation": "Tech-support pop-ups are fake alarms in a web page. Microsoft never shows phone numbers in warnings. Calling leads to remote access and fake 'fix' fees.",
+   "redFlags": [
+    "scary pop-up",
+    "phone number in a warning",
+    "alarm sound"
+   ]
+  },
+  {
+   "id": "q029",
+   "category": "support",
+   "difficulty": "easy",
+   "scenario": "A caller says they're from your bank's 'credit card upgrade team' and need your card number, expiry and CVV to upgrade your limit for free.",
+   "question": "What should you do?",
+   "options": [
+    "Hang up; banks never ask for CVV over the phone — call the number on your card if curious",
+    "Ask them to call back later",
+    "Share — the upgrade is free",
+    "Share only the CVV"
+   ],
+   "correctIndex": 0,
+   "explanation": "Card number + expiry + CVV is everything needed for online payments. Banks never need your CVV. 'Only the CVV' is still giving the key part.",
+   "redFlags": [
+    "asks for CVV",
+    "free upgrade bait"
+   ]
+  },
+  {
+   "id": "q030",
+   "category": "support",
+   "difficulty": "medium",
+   "scenario": "Your Paytm wallet shows an issue. A 'Paytm support' account on Telegram asks you to share your screen 'for KYC verification'.",
+   "question": "What's the safe choice?",
+   "options": [
+    "Share your screen — it's quick",
+    "Use help only inside the Paytm app; real support never asks for screen sharing on Telegram",
+    "Share screen but cover the OTP with your finger",
+    "Send them a photo of your Aadhaar instead"
+   ],
+   "correctIndex": 1,
+   "explanation": "Screen sharing exposes OTPs, PINs and notifications. Companies don't run support from Telegram chats. Sending ID photos lets them open loans or SIMs in your name.",
+   "redFlags": [
+    "support on Telegram",
+    "screen sharing",
+    "KYC excuse"
+   ]
+  },
+  {
+   "id": "q031",
+   "category": "arrest",
+   "difficulty": "easy",
+   "scenario": "A video call shows a man in police uniform at a 'police station'. He says a parcel in your name with drugs was seized and you are under 'digital arrest' — you must stay on camera and not tell anyone.",
+   "question": "What should you do?",
+   "options": [
+    "Ask to see his ID card on camera",
+    "Stay on the call and follow instructions",
+    "Hang up — 'digital arrest' does not exist; real police never arrest or investigate over video calls",
+    "Pay the 'verification deposit' to clear your name"
+   ],
+   "correctIndex": 2,
+   "explanation": "No Indian law allows arrest over a call. Uniforms and backgrounds are props. Asking for an ID feels smart but they show a fake one — the only safe move is to disconnect and call 1930 or your local police.",
+   "redFlags": [
+    "'digital arrest'",
+    "don't tell anyone",
+    "video call from 'police'"
+   ]
+  },
+  {
+   "id": "q032",
+   "category": "arrest",
+   "difficulty": "medium",
+   "scenario": "A caller from 'FedEx' says your parcel to Taiwan contained fake passports and drugs, then transfers you to 'Mumbai Cyber Crime' who asks you to move your savings to an 'RBI safe account' for verification.",
+   "question": "What is this?",
+   "options": [
+    "A real case — move the money to stay safe",
+    "A tax audit",
+    "A routine verification process",
+    "The courier-drugs digital-arrest scam — no agency asks you to transfer money for verification"
+   ],
+   "correctIndex": 3,
+   "explanation": "Courier → fake police → 'safe account' is the standard script. RBI doesn't hold personal 'safe accounts'. Transferring 'temporarily' is how victims lose lakhs.",
+   "redFlags": [
+    "parcel with drugs",
+    "transferred to 'police'",
+    "RBI safe account"
+   ]
+  },
+  {
+   "id": "q033",
+   "category": "arrest",
+   "difficulty": "medium",
+   "scenario": "A letter on WhatsApp with Supreme Court and CBI logos says there is a money-laundering warrant against you and asks for ₹1,50,000 'bail amount' by today.",
+   "question": "How do you respond?",
+   "options": [
+    "Ignore the payment demand and verify with your local police station or a lawyer in person",
+    "Reply asking for a discount",
+    "Share it with family and pay together",
+    "Pay to avoid arrest"
+   ],
+   "correctIndex": 0,
+   "explanation": "Courts don't send warrants on WhatsApp or collect bail via UPI. Fake logos and legal words create panic. Verifying in person ends it.",
+   "redFlags": [
+    "court logos on WhatsApp",
+    "bail by UPI",
+    "same-day deadline"
+   ]
+  },
+  {
+   "id": "q034",
+   "category": "arrest",
+   "difficulty": "hard",
+   "scenario": "The 'officer' says: 'If you disconnect or tell your family, you'll be arrested immediately. Keep the video on all night.'",
+   "question": "Why do scammers insist on isolation?",
+   "options": [
+    "Because it's the law during investigations",
+    "So you can't check with anyone who would tell you it's a scam",
+    "To protect your privacy",
+    "Because family members are suspects too"
+   ],
+   "correctIndex": 1,
+   "explanation": "Isolation is the scam's engine: one call to a relative or 1930 breaks it. Real investigations never forbid you from speaking to family or a lawyer.",
+   "redFlags": [
+    "forced isolation",
+    "stay on camera",
+    "threats if you hang up"
+   ]
+  },
+  {
+   "id": "q035",
+   "category": "arrest",
+   "difficulty": "easy",
+   "scenario": "A call says: 'This is customs. A parcel from abroad in your name has gold. Pay ₹35,000 customs duty or it will be seized and you'll be charged.'",
+   "question": "What's the best action?",
+   "options": [
+    "Ask them to send the parcel anyway",
+    "Pay the duty via the UPI ID they give",
+    "Hang up; customs duty is paid only through official customs portals with real paperwork, never to a person",
+    "Give your PAN to check"
+   ],
+   "correctIndex": 2,
+   "explanation": "Customs never collects duty over a phone call to a personal UPI ID. Parcels from 'friends abroad' you don't know about are a common bait.",
+   "redFlags": [
+    "customs duty by UPI",
+    "unexpected parcel",
+    "threat of charges"
+   ]
+  },
+  {
+   "id": "q036",
+   "category": "arrest",
+   "difficulty": "medium",
+   "scenario": "A caller says your Aadhaar was used to open 12 bank accounts for illegal activity and asks you to confirm your Aadhaar and bank balance 'for the investigation'.",
+   "question": "What should you do?",
+   "options": [
+    "Read out your balance only",
+    "Ask them to email the FIR",
+    "Confirm the details to clear yourself",
+    "Disconnect; check Aadhaar usage yourself on the official myAadhaar portal and report on 1930 if worried"
+   ],
+   "correctIndex": 3,
+   "explanation": "Police don't ask your bank balance on calls. The question about balance tells them how much to demand. Checking official portals yourself is safe.",
+   "redFlags": [
+    "Aadhaar misuse story",
+    "asks your balance"
+   ]
+  },
+  {
+   "id": "q037",
+   "category": "arrest",
+   "difficulty": "hard",
+   "scenario": "An elderly neighbour has been on a video call for 6 hours with 'CBI officers' and is about to visit the bank to transfer ₹20 lakh.",
+   "question": "What's the most helpful thing you can do?",
+   "options": [
+    "Gently interrupt, explain 'digital arrest' is a scam, help them call 1930, and go with them to the bank to stop the transfer",
+    "Join the call to argue with the officers",
+    "Tell them to transfer only half",
+    "Let them go — it's their decision"
+   ],
+   "correctIndex": 0,
+   "explanation": "Victims are often under intense fear and can't think clearly. A calm trusted person and a call to 1930 break the spell. Arguing on the call lets scammers re-assert control.",
+   "redFlags": [
+    "hours-long video call",
+    "big transfer planned",
+    "elderly victim"
+   ]
+  },
+  {
+   "id": "q038",
+   "category": "jobs",
+   "difficulty": "easy",
+   "scenario": "WhatsApp message: 'Earn ₹3,000/day from home! Just like YouTube videos. Join our Telegram group.' You complete 3 tasks and receive ₹150.",
+   "question": "What usually happens next?",
+   "options": [
+    "You keep earning more",
+    "You're asked to 'invest' or 'prepay' for bigger tasks, and the money gets stuck",
+    "They hire you full-time",
+    "They send you a laptop"
+   ],
+   "correctIndex": 1,
+   "explanation": "Task scams pay small amounts first to build trust, then ask you to deposit for 'premium tasks'. Withdrawals are blocked until you pay more.",
+   "redFlags": [
+    "paid to like videos",
+    "Telegram group",
+    "small payouts first"
+   ]
+  },
+  {
+   "id": "q039",
+   "category": "jobs",
+   "difficulty": "medium",
+   "scenario": "An 'HR' from a big IT company offers you a job without an interview but asks for ₹4,999 for 'laptop security deposit and background verification'.",
+   "question": "What's the right response?",
+   "options": [
+    "Ask your friends to pay too",
+    "Pay — big companies ask for deposits",
+    "Refuse; real employers don't charge candidates, and verify the offer through the company's official careers page",
+    "Pay half now and half after joining"
+   ],
+   "correctIndex": 2,
+   "explanation": "Genuine companies never charge job seekers. No-interview offers are a giveaway. Paying in parts just loses money in parts.",
+   "redFlags": [
+    "no interview",
+    "fee before joining",
+    "personal email/WhatsApp HR"
+   ]
+  },
+  {
+   "id": "q040",
+   "category": "jobs",
+   "difficulty": "medium",
+   "scenario": "A part-time 'review job' asks you to rate hotels on Google for ₹50 each. After 5 reviews, they say your account needs ₹5,000 recharge to unlock the next 30 tasks with 30% commission.",
+   "question": "What should you do?",
+   "options": [
+    "Recharge just once to test",
+    "Ask for a smaller recharge",
+    "Recharge — commission makes it profitable",
+    "Stop; any job that asks you to pay to earn is a scam"
+   ],
+   "correctIndex": 3,
+   "explanation": "Paying to unlock work is the core of task scams. The '30% commission' only exists on a fake dashboard you can't withdraw from.",
+   "redFlags": [
+    "pay to unlock tasks",
+    "fake earnings dashboard"
+   ]
+  },
+  {
+   "id": "q041",
+   "category": "jobs",
+   "difficulty": "easy",
+   "scenario": "A Telegram channel offers 'data entry work, ₹25,000/month, registration fee ₹1,500 refundable after first salary'.",
+   "question": "Is the refundable fee safe?",
+   "options": [
+    "No — 'refundable fees' are rarely refunded and are a common job-scam trick",
+    "Yes, if the channel has many members",
+    "Yes, if they send an offer letter",
+    "Yes, it's refundable"
+   ],
+   "correctIndex": 0,
+   "explanation": "Members can be bots and offer letters are easy to fake. Any upfront fee for a job is a red flag.",
+   "redFlags": [
+    "registration fee",
+    "Telegram recruitment",
+    "'refundable'"
+   ]
+  },
+  {
+   "id": "q042",
+   "category": "jobs",
+   "difficulty": "hard",
+   "scenario": "An overseas job agent promises a warehouse job in Canada, asks for passport copy, ₹80,000 for visa processing, and says not to use the embassy website because it's 'slow'.",
+   "question": "What's the safest step?",
+   "options": [
+    "Pay — agents speed things up",
+    "Verify the agent is registered with the Ministry of External Affairs (eMigrate) and check visa info only on official embassy sites",
+    "Send passport copy first, pay later",
+    "Ask for a discount for paying in cash"
+   ],
+   "correctIndex": 1,
+   "explanation": "Licensed recruiting agents are listed on eMigrate. Steering you away from official sites is a major red flag. Passport copies can be misused.",
+   "redFlags": [
+    "avoid official site",
+    "visa fee to agent",
+    "passport copy request"
+   ]
+  },
+  {
+   "id": "q043",
+   "category": "jobs",
+   "difficulty": "medium",
+   "scenario": "You're asked to receive money into your account from 'clients' and forward 90% to another account, keeping 10% as salary.",
+   "question": "What is this really?",
+   "options": [
+    "An internship",
+    "A payment-processing job",
+    "Money muling — your account is used to launder stolen money, and you can be arrested",
+    "A freelance accounting gig"
+   ],
+   "correctIndex": 2,
+   "explanation": "Forwarding money for others makes you a 'money mule'. Accounts get frozen and police come to you, not the organiser.",
+   "redFlags": [
+    "receive and forward money",
+    "keep a percentage"
+   ]
+  },
+  {
+   "id": "q044",
+   "category": "jobs",
+   "difficulty": "easy",
+   "scenario": "'Dear Student, register for the Academic Internship with certification. Closes today! Pay ₹1,999 at the link.' from an unknown number.",
+   "question": "What should you do?",
+   "options": [
+    "Forward to all classmates",
+    "Pay with a friend's card",
+    "Pay quickly before it closes",
+    "Check with your college placement cell and the company's official website first"
+   ],
+   "correctIndex": 3,
+   "explanation": "Deadlines push you to skip checking. Your placement cell knows which programs are real.",
+   "redFlags": [
+    "closes today",
+    "fee for internship",
+    "unknown sender"
+   ]
+  },
+  {
+   "id": "q045",
+   "category": "invest",
+   "difficulty": "easy",
+   "scenario": "A WhatsApp group with 'SEBI-registered expert' shares stock tips that seem to work for two weeks. Then they ask you to install their app to buy IPO shares at a discount.",
+   "question": "What's the risk?",
+   "options": [
+    "The app is fake; the profits shown are fake and withdrawals will be blocked",
+    "The IPO might be delayed",
+    "You might pay extra brokerage",
+    "None — the tips worked"
+   ],
+   "correctIndex": 0,
+   "explanation": "Early 'wins' build trust. The custom app shows fake balances. Real investments go through registered brokers and official app stores; check SEBI registration yourself.",
+   "redFlags": [
+    "WhatsApp stock group",
+    "custom trading app",
+    "discounted IPO"
+   ]
+  },
+  {
+   "id": "q046",
+   "category": "invest",
+   "difficulty": "medium",
+   "scenario": "Your trading app balance shows ₹12 lakh profit from ₹2 lakh invested. To withdraw, they ask for 20% 'tax' upfront.",
+   "question": "What does this mean?",
+   "options": [
+    "Normal capital gains tax",
+    "A scam — real platforms deduct taxes from gains, never ask you to deposit more to withdraw",
+    "A small processing fee",
+    "A one-time compliance charge"
+   ],
+   "correctIndex": 1,
+   "explanation": "Being asked to pay to withdraw your own money is the clearest sign of a fake platform. Paying the 'tax' leads to another fee.",
+   "redFlags": [
+    "pay to withdraw",
+    "huge fake profits"
+   ]
+  },
+  {
+   "id": "q047",
+   "category": "invest",
+   "difficulty": "hard",
+   "scenario": "Someone you met on a dating app slowly becomes a close friend, then shows you their crypto gains and helps you invest on a site they recommend. You add more each week.",
+   "question": "What scam pattern is this?",
+   "options": [
+    "A bank's mutual fund",
+    "Normal friendly advice",
+    "'Pig butchering' — long trust-building followed by a fake crypto platform",
+    "A government scheme"
+   ],
+   "correctIndex": 2,
+   "explanation": "Scammers spend weeks building a relationship before introducing an investment. The platform shows growing fake gains to get bigger deposits.",
+   "redFlags": [
+    "online friend gives investment tips",
+    "unknown crypto site",
+    "encourages bigger deposits"
+   ]
+  },
+  {
+   "id": "q048",
+   "category": "invest",
+   "difficulty": "medium",
+   "scenario": "A YouTube ad shows a famous industrialist saying 'Invest ₹21,000 and earn ₹1 lakh weekly with our AI trading platform'.",
+   "question": "Why should you be suspicious?",
+   "options": [
+    "The amount is too low",
+    "The ad is too short",
+    "Famous people don't use YouTube",
+    "Deepfake celebrity endorsements are common; guaranteed high returns are always a red flag"
+   ],
+   "correctIndex": 3,
+   "explanation": "Guaranteed huge returns don't exist. Celebrity faces and voices are faked with AI.",
+   "redFlags": [
+    "celebrity endorsement",
+    "guaranteed returns",
+    "AI trading"
+   ]
+  },
+  {
+   "id": "q049",
+   "category": "invest",
+   "difficulty": "easy",
+   "scenario": "A friend invites you to a scheme where you earn ₹500 for every person you add, and your money 'doubles in 60 days'.",
+   "question": "What is this?",
+   "options": [
+    "A Ponzi/pyramid scheme that collapses when new joiners stop",
+    "A government savings plan",
+    "A mutual fund SIP",
+    "A safe investment"
+   ],
+   "correctIndex": 0,
+   "explanation": "Returns that come from recruiting others are Ponzi schemes. Early joiners may get paid, which makes it look real.",
+   "redFlags": [
+    "money doubles fast",
+    "pay for referrals"
+   ]
+  },
+  {
+   "id": "q050",
+   "category": "invest",
+   "difficulty": "hard",
+   "scenario": "You download a 'stock trading app' from a link in a Telegram group, not from the Play Store. It needs permission to read SMS.",
+   "question": "What's the danger?",
+   "options": [
+    "None — many apps need SMS",
+    "It's a sideloaded app that can read your OTPs and isn't a registered broker",
+    "It will slow your phone",
+    "It might show ads"
+   ],
+   "correctIndex": 1,
+   "explanation": "Apps outside official stores can be malware, and SMS access lets them read bank OTPs. Real brokers are SEBI-registered and on official stores.",
+   "redFlags": [
+    "APK from Telegram",
+    "SMS permission",
+    "unregistered broker"
+   ]
+  },
+  {
+   "id": "q051",
+   "category": "invest",
+   "difficulty": "medium",
+   "scenario": "A 'portfolio manager' promises a fixed 8% return every month and asks you to transfer to his personal account.",
+   "question": "What should you do?",
+   "options": [
+    "Ask for a written promise",
+    "Transfer — 8% monthly is great",
+    "Decline; check SEBI's registered intermediary list and never pay into personal accounts",
+    "Transfer a small amount first"
+   ],
+   "correctIndex": 2,
+   "explanation": "8% a month is about 150% a year — no legitimate manager guarantees that. Written promises from scammers mean nothing.",
+   "redFlags": [
+    "fixed monthly returns",
+    "personal account",
+    "unregistered manager"
+   ]
+  },
+  {
+   "id": "q052",
+   "category": "social",
+   "difficulty": "easy",
+   "scenario": "Your friend messages on Instagram: 'I'm stuck at the hospital, please send ₹8,000 urgently, will return tomorrow. Don't call, my phone is broken.'",
+   "question": "What should you do?",
+   "options": [
+    "Send half",
+    "Ask them to send a selfie",
+    "Send the money quickly",
+    "Call your friend on their usual number or check with someone close to them first"
+   ],
+   "correctIndex": 3,
+   "explanation": "Hacked accounts message friends for urgent money. 'Don't call' prevents you from checking. Selfies can be old photos.",
+   "redFlags": [
+    "urgent money",
+    "'don't call me'",
+    "hacked account"
+   ]
+  },
+  {
+   "id": "q053",
+   "category": "social",
+   "difficulty": "medium",
+   "scenario": "A Facebook page with a celebrity's photo says 'Giveaway! Win an iPhone 16 — just pay ₹299 delivery charge.'",
+   "question": "How do you spot this?",
+   "options": [
+    "Check for the verified badge and official handle; real giveaways never charge delivery",
+    "Pay since it's only ₹299",
+    "Comment 'interested' to apply",
+    "Celebrity pages are always real"
+   ],
+   "correctIndex": 0,
+   "explanation": "Fake pages copy photos and names. A fee to receive a prize is the scam.",
+   "redFlags": [
+    "giveaway fee",
+    "unverified page"
+   ]
+  },
+  {
+   "id": "q054",
+   "category": "social",
+   "difficulty": "medium",
+   "scenario": "A friend sends you a link: 'Vote for me in this contest!' The page asks you to log in with your WhatsApp number and enter a 6-digit code.",
+   "question": "What happens if you enter the code?",
+   "options": [
+    "Your vote is counted",
+    "Your WhatsApp gets taken over and used to scam your contacts",
+    "Nothing",
+    "You enter the contest too"
+   ],
+   "correctIndex": 1,
+   "explanation": "That code is WhatsApp's registration code. Entering it hands your account to the scammer.",
+   "redFlags": [
+    "log in to vote",
+    "6-digit WhatsApp code"
+   ]
+  },
+  {
+   "id": "q055",
+   "category": "social",
+   "difficulty": "hard",
+   "scenario": "Someone creates a new profile with your cousin's photos and sends friend requests to all your relatives.",
+   "question": "What's the best response?",
+   "options": [
+    "Ignore it",
+    "Accept the request to see what they want",
+    "Report the fake profile, warn relatives, and tell your cousin to report it too",
+    "Message them angrily"
+   ],
+   "correctIndex": 2,
+   "explanation": "Cloned profiles are used to ask relatives for money. Reporting gets it removed; warning family stops the scam.",
+   "redFlags": [
+    "duplicate profile",
+    "new account with old photos"
+   ]
+  },
+  {
+   "id": "q056",
+   "category": "social",
+   "difficulty": "easy",
+   "scenario": "A WhatsApp message says 'Free ₹500 Amazon voucher for Diwali! Forward to 10 groups to claim.'",
+   "question": "Is this real?",
+   "options": [
+    "Yes, if you forward it",
+    "Only if the link has 'amazon'",
+    "Yes, companies give festival gifts",
+    "No — it's a chain-message scam that spreads phishing links"
+   ],
+   "correctIndex": 3,
+   "explanation": "Forward-to-claim messages spread fake links. Brand names in a link don't prove it's official.",
+   "redFlags": [
+    "forward to claim",
+    "free voucher",
+    "festival bait"
+   ]
+  },
+  {
+   "id": "q057",
+   "category": "social",
+   "difficulty": "medium",
+   "scenario": "Your Instagram gets a DM: 'Your account violated copyright. Appeal within 24 hours or it will be deleted' with a link.",
+   "question": "What should you do?",
+   "options": [
+    "Check notifications inside the Instagram app's settings; ignore links in DMs",
+    "Reply with your password to prove ownership",
+    "Delete your account",
+    "Click and appeal quickly"
+   ],
+   "correctIndex": 0,
+   "explanation": "Instagram shows real warnings in the app. The link leads to a fake login page. Never share your password.",
+   "redFlags": [
+    "copyright threat",
+    "24-hour deadline",
+    "link in DM"
+   ]
+  },
+  {
+   "id": "q058",
+   "category": "romance",
+   "difficulty": "medium",
+   "scenario": "Someone you met online for 2 months, but never on video, says they're a doctor abroad and needs money to pay customs for a gift they sent you.",
+   "question": "What's happening?",
+   "options": [
+    "A genuine relationship problem",
+    "A romance scam — refusal to video call and money requests are classic signs",
+    "A customs delay",
+    "A lucky surprise"
+   ],
+   "correctIndex": 1,
+   "explanation": "Romance scammers avoid video, claim prestigious jobs abroad and invent emergencies or gift fees.",
+   "redFlags": [
+    "never video calls",
+    "money for a gift",
+    "job abroad"
+   ]
+  },
+  {
+   "id": "q059",
+   "category": "romance",
+   "difficulty": "hard",
+   "scenario": "After a video call with someone you met online, they threaten to share an edited private video unless you pay.",
+   "question": "What's the best response?",
+   "options": [
+    "Delete your accounts and hide",
+    "Pay quickly so it stops",
+    "Don't pay, stop contact, save evidence, report on cybercrime.gov.in or 1930, and tell a trusted adult",
+    "Negotiate a lower amount"
+   ],
+   "correctIndex": 2,
+   "explanation": "Paying leads to more demands. Reporting helps platforms remove content and police act. You are the victim — it's not your fault.",
+   "redFlags": [
+    "threat to share video",
+    "demand for money"
+   ]
+  },
+  {
+   "id": "q060",
+   "category": "romance",
+   "difficulty": "easy",
+   "scenario": "A stranger on a game app compliments you a lot and asks you to move the chat to a private app and share photos.",
+   "question": "What should you do?",
+   "options": [
+    "Share just one photo",
+    "Give your phone number",
+    "Move to the private app",
+    "Keep chats on the platform, don't share photos, and block/report if they pressure you"
+   ],
+   "correctIndex": 3,
+   "explanation": "Moving to private apps removes safety tools. Shared photos can be misused for blackmail.",
+   "redFlags": [
+    "move to private app",
+    "asks for photos",
+    "lots of flattery"
+   ]
+  },
+  {
+   "id": "q061",
+   "category": "romance",
+   "difficulty": "medium",
+   "scenario": "An online partner you've never met asks you to receive a package for them and send it on, or receive money in your account.",
+   "question": "Why is this dangerous?",
+   "options": [
+    "You may be used to move stolen goods or money — making you liable",
+    "The courier will charge you",
+    "It's illegal to receive parcels",
+    "It's just a favour"
+   ],
+   "correctIndex": 0,
+   "explanation": "Romance scammers recruit victims as mules. The police trace the goods or money to you.",
+   "redFlags": [
+    "receive and forward",
+    "never met in person"
+   ]
+  },
+  {
+   "id": "q062",
+   "category": "sim",
+   "difficulty": "easy",
+   "scenario": "A caller from your 'mobile operator' says your SIM needs a 4G-to-5G upgrade and asks you to SMS a code they read out to a number.",
+   "question": "What's the risk?",
+   "options": [
+    "None — upgrades need codes",
+    "It may trigger a SIM swap/eSIM transfer giving them your number and OTPs",
+    "It costs a small fee",
+    "It will reset your phone"
+   ],
+   "correctIndex": 1,
+   "explanation": "Sending such codes can authorise moving your number to their SIM/eSIM. Upgrades happen in stores or the official app.",
+   "redFlags": [
+    "SIM upgrade call",
+    "send a code to a number"
+   ]
+  },
+  {
+   "id": "q063",
+   "category": "sim",
+   "difficulty": "medium",
+   "scenario": "Your phone suddenly shows 'No service' for hours, and you start getting emails about password resets.",
+   "question": "What might be happening and what should you do?",
+   "options": [
+    "Buy a new phone",
+    "Network issue — wait it out",
+    "Possible SIM swap; contact your operator from another phone immediately and alert your bank",
+    "Restart the phone a few times"
+   ],
+   "correctIndex": 2,
+   "explanation": "Losing signal plus reset emails suggests someone moved your number. Fast action with the operator and bank limits damage.",
+   "redFlags": [
+    "sudden loss of signal",
+    "unexpected reset emails"
+   ]
+  },
+  {
+   "id": "q064",
+   "category": "sim",
+   "difficulty": "hard",
+   "scenario": "A 'delivery agent' calls: 'To reschedule, dial *401* followed by this number.'",
+   "question": "What does *401* do?",
+   "options": [
+    "Checks your balance",
+    "Blocks spam",
+    "Reschedules delivery",
+    "Forwards all your calls to the scammer, including bank OTP calls"
+   ],
+   "correctIndex": 3,
+   "explanation": "*401* sets unconditional call forwarding on some networks. Scammers then receive your OTP calls. Cancel forwarding with ##002#.",
+   "redFlags": [
+    "dial a code",
+    "call forwarding"
+   ]
+  },
+  {
+   "id": "q065",
+   "category": "sim",
+   "difficulty": "easy",
+   "scenario": "Someone says: 'I accidentally sent my OTP to your number, please forward it to me.'",
+   "question": "What should you do?",
+   "options": [
+    "Don't share; the OTP is probably for logging into YOUR account",
+    "Ask them who they are first",
+    "Share half the digits",
+    "Forward it — it's their OTP"
+   ],
+   "correctIndex": 0,
+   "explanation": "The OTP was sent to your number because someone is trying to access your WhatsApp, bank or email. Never share it.",
+   "redFlags": [
+    "OTP 'sent by mistake'",
+    "asks you to forward a code"
+   ]
+  },
+  {
+   "id": "q066",
+   "category": "sim",
+   "difficulty": "medium",
+   "scenario": "Your operator's app says an eSIM activation request was made for your number. You didn't request it.",
+   "question": "What should you do?",
+   "options": [
+    "Ignore it",
+    "Reject/cancel it and contact the operator via official channels right away",
+    "Approve it to stop notifications",
+    "Turn off the phone"
+   ],
+   "correctIndex": 1,
+   "explanation": "Unrequested eSIM activation is an account-takeover attempt. Cancelling quickly keeps your number.",
+   "redFlags": [
+    "unrequested eSIM",
+    "activation alert"
+   ]
+  },
+  {
+   "id": "q067",
+   "category": "sim",
+   "difficulty": "medium",
+   "scenario": "A bank SMS says 'OTP 731905 for adding new beneficiary Rahul K.' — you didn't add anyone. A minute later someone calls saying it was a 'system error' and asks for the OTP to cancel.",
+   "question": "What do you do?",
+   "options": [
+    "Reply STOP",
+    "Give the OTP to cancel",
+    "Never share it; call the bank's official number and change your net banking password",
+    "Ignore both"
+   ],
+   "correctIndex": 2,
+   "explanation": "The OTP is for adding the scammer as beneficiary. Calls asking for it to 'cancel' are part of the same scam.",
+   "redFlags": [
+    "unexpected beneficiary OTP",
+    "call asking for OTP"
+   ]
+  },
+  {
+   "id": "q068",
+   "category": "sim",
+   "difficulty": "hard",
+   "scenario": "You notice you're not receiving any SMS for a day but calls work, and your email shows a login from a new device.",
+   "question": "What's the smartest first step?",
+   "options": [
+    "Delete the email account",
+    "Change your phone wallpaper",
+    "Wait for SMS to return",
+    "Check call/SMS forwarding settings, contact operator, and secure email and bank logins with new passwords"
+   ],
+   "correctIndex": 3,
+   "explanation": "SMS forwarding or partial SIM tampering lets attackers grab OTPs. Securing accounts and checking settings quickly matters.",
+   "redFlags": [
+    "missing SMS",
+    "new device login"
+   ]
+  },
+  {
+   "id": "q069",
+   "category": "passwords",
+   "difficulty": "easy",
+   "scenario": "You use the same password for email, Instagram and your bank because it's easy to remember.",
+   "question": "Why is this dangerous?",
+   "options": [
+    "If one site leaks, attackers try it everywhere ('credential stuffing')",
+    "Banks don't allow it",
+    "It slows logins",
+    "It isn't, if the password is long"
+   ],
+   "correctIndex": 0,
+   "explanation": "Leaked passwords are tried on other sites automatically. Use unique passwords, ideally with a password manager.",
+   "redFlags": [
+    "password reuse",
+    "one leak opens every account"
+   ]
+  },
+  {
+   "id": "q070",
+   "category": "passwords",
+   "difficulty": "medium",
+   "scenario": "You want strong, unique passwords for 40 accounts but can't remember them.",
+   "question": "What's the best approach?",
+   "options": [
+    "Write them in a notes app called 'passwords'",
+    "Use a reputable password manager with a strong master password and 2FA",
+    "Use one password with different numbers at the end",
+    "Use your birthday for all"
+   ],
+   "correctIndex": 1,
+   "explanation": "Password managers create and store unique passwords safely. Small variations of one password are easy to guess.",
+   "redFlags": [
+    "predictable variations",
+    "plain-text notes"
+   ]
+  },
+  {
+   "id": "q071",
+   "category": "passwords",
+   "difficulty": "medium",
+   "scenario": "Your bank and email offer 2FA via SMS, authenticator app, or passkey.",
+   "question": "Which is generally strongest against phishing?",
+   "options": [
+    "No 2FA",
+    "SMS codes",
+    "Passkeys (device-based sign-in) or authenticator apps",
+    "Security questions"
+   ],
+   "correctIndex": 2,
+   "explanation": "Passkeys can't be typed into fake sites, and authenticator apps avoid SIM-swap risks of SMS. SMS is still better than nothing.",
+   "redFlags": [
+    "SMS-only 2FA",
+    "codes can be phished or SIM-swapped"
+   ]
+  },
+  {
+   "id": "q072",
+   "category": "passwords",
+   "difficulty": "easy",
+   "scenario": "A site's 'forgot password' page asks your mother's maiden name and first school, which are visible on your Facebook.",
+   "question": "What should you do?",
+   "options": [
+    "Remove the security questions",
+    "Post fewer photos",
+    "Keep the real answers",
+    "Use random answers stored in your password manager"
+   ],
+   "correctIndex": 3,
+   "explanation": "Public facts make security questions easy to bypass. Random answers stored safely fix this.",
+   "redFlags": [
+    "guessable security answers",
+    "answers found on social media"
+   ]
+  },
+  {
+   "id": "q073",
+   "category": "passwords",
+   "difficulty": "hard",
+   "scenario": "You get an email 'Your Gmail recovery phone was changed' with a link 'If this wasn't you, click here.'",
+   "question": "What's the safe action?",
+   "options": [
+    "Open Gmail or Google account settings yourself and check security activity",
+    "Reply to the email",
+    "Ignore it",
+    "Click the link"
+   ],
+   "correctIndex": 0,
+   "explanation": "Even real-looking alerts can be phishing. Going to account settings yourself shows real changes.",
+   "redFlags": [
+    "security alert with link",
+    "urgent recovery change"
+   ]
+  },
+  {
+   "id": "q074",
+   "category": "passwords",
+   "difficulty": "medium",
+   "scenario": "A friend asks to borrow your phone and wants your phone PIN 'just for today'.",
+   "question": "Why be careful?",
+   "options": [
+    "No reason",
+    "Your PIN unlocks banking apps, OTPs and saved passwords",
+    "They might change wallpaper",
+    "It may drain battery"
+   ],
+   "correctIndex": 1,
+   "explanation": "Your phone PIN often protects everything. Unlock it yourself and stay with the person instead.",
+   "redFlags": [
+    "sharing phone PIN",
+    "PIN unlocks everything"
+   ]
+  },
+  {
+   "id": "q075",
+   "category": "devices",
+   "difficulty": "easy",
+   "scenario": "At a café you see two Wi-Fi networks: 'CafeCoffee_Free' and 'CafeCoffee-Guest'. You're not sure which is real.",
+   "question": "What should you do?",
+   "options": [
+    "Use the one without a password",
+    "Connect to the stronger signal",
+    "Ask staff for the exact network name, and avoid logging in to banking on public Wi-Fi",
+    "Connect to both"
+   ],
+   "correctIndex": 2,
+   "explanation": "Attackers create lookalike hotspots to watch traffic. Confirm the name and avoid sensitive logins; use mobile data instead.",
+   "redFlags": [
+    "lookalike hotspot",
+    "open network"
+   ]
+  },
+  {
+   "id": "q076",
+   "category": "devices",
+   "difficulty": "medium",
+   "scenario": "At an airport, a free USB charging port is available, and your phone asks 'Trust this computer?' when you plug in.",
+   "question": "What should you do?",
+   "options": [
+    "Tap Trust only for 5 minutes",
+    "Unplug and plug again",
+    "Tap Trust",
+    "Tap Don't Trust; use your own charger with a wall socket or a power bank"
+   ],
+   "correctIndex": 3,
+   "explanation": "'Juice jacking' uses USB ports to access data. A wall charger or power bank only gives power.",
+   "redFlags": [
+    "public USB port",
+    "'Trust this computer?' prompt"
+   ]
+  },
+  {
+   "id": "q077",
+   "category": "devices",
+   "difficulty": "easy",
+   "scenario": "WhatsApp message: 'Download SBI Rewards.apk to redeem your points.'",
+   "question": "Why not install it?",
+   "options": [
+    "APKs outside the Play Store can be malware that reads OTPs and controls your phone",
+    "It might not work on your phone",
+    "SBI rewards expired",
+    "It's too big"
+   ],
+   "correctIndex": 0,
+   "explanation": "Banks don't send apps over WhatsApp. Sideloaded APKs often contain banking trojans.",
+   "redFlags": [
+    "APK on WhatsApp",
+    "rewards bait"
+   ]
+  },
+  {
+   "id": "q078",
+   "category": "devices",
+   "difficulty": "medium",
+   "scenario": "An app you installed asks for 'Accessibility' permission saying it needs it to 'work properly'. It's a flashlight app.",
+   "question": "What should you do?",
+   "options": [
+    "Allow it",
+    "Deny and uninstall — accessibility access can read your screen and tap for you",
+    "Allow and restrict later",
+    "Restart the phone"
+   ],
+   "correctIndex": 1,
+   "explanation": "Accessibility access lets malware read OTPs and perform actions. A flashlight never needs it.",
+   "redFlags": [
+    "accessibility permission",
+    "app doesn't need it"
+   ]
+  },
+  {
+   "id": "q079",
+   "category": "devices",
+   "difficulty": "hard",
+   "scenario": "Your Android shows a 'System update' notification from a website, asking you to install a file.",
+   "question": "What's correct?",
+   "options": [
+    "Share with friends",
+    "Install it — updates are important",
+    "Ignore it; real updates come from Settings → System update or the Play Store",
+    "Install but deny permissions"
+   ],
+   "correctIndex": 2,
+   "explanation": "Fake update pages push malware. Real updates come through the phone's settings.",
+   "redFlags": [
+    "update from website",
+    "download a file"
+   ]
+  },
+  {
+   "id": "q080",
+   "category": "devices",
+   "difficulty": "medium",
+   "scenario": "You're asked to turn on 'Install unknown apps' for Chrome to download a coupon app.",
+   "question": "What does this risk?",
+   "options": [
+    "Speeds up downloads",
+    "Saves battery",
+    "Nothing",
+    "Allows malicious apps to install; keep it off"
+   ],
+   "correctIndex": 3,
+   "explanation": "Unknown-source installs bypass Play Store checks. Keep the setting off.",
+   "redFlags": [
+    "enable unknown sources",
+    "bypasses Play Protect"
+   ]
+  },
+  {
+   "id": "q081",
+   "category": "after",
+   "difficulty": "easy",
+   "scenario": "You just realised you paid ₹45,000 to a fake trading app 20 minutes ago.",
+   "question": "What's the most important first step?",
+   "options": [
+    "Call 1930 immediately and report on cybercrime.gov.in; then call your bank",
+    "Post about it on Instagram",
+    "Message the scammer to ask for the money back",
+    "Wait a few days to see if they return it"
+   ],
+   "correctIndex": 0,
+   "explanation": "The 'golden hour' matters: 1930 can coordinate with banks to freeze the money before it's moved.",
+   "redFlags": [
+    "delay in reporting",
+    "money moved within hours"
+   ]
+  },
+  {
+   "id": "q082",
+   "category": "after",
+   "difficulty": "medium",
+   "scenario": "You shared your card details on a fake site. No money has been taken yet.",
+   "question": "What should you do?",
+   "options": [
+    "Nothing until a charge appears",
+    "Block the card in your bank app or by calling the number on the card, and request a new one",
+    "Change your phone number",
+    "Delete the browser"
+   ],
+   "correctIndex": 1,
+   "explanation": "Blocking immediately stops future misuse. Waiting gives scammers time.",
+   "redFlags": [
+    "card details leaked",
+    "waiting for a charge"
+   ]
+  },
+  {
+   "id": "q083",
+   "category": "after",
+   "difficulty": "medium",
+   "scenario": "Your Aadhaar and PAN copies were shared with a 'loan agent' who disappeared.",
+   "question": "What's a good next step?",
+   "options": [
+    "Share on social media",
+    "Ignore it",
+    "Lock your Aadhaar biometrics on the official portal and watch your credit report for unknown loans",
+    "Apply for a new PAN"
+   ],
+   "correctIndex": 2,
+   "explanation": "Biometric lock and credit monitoring catch misuse early.",
+   "redFlags": [
+    "ID documents shared",
+    "loans in your name"
+   ]
+  },
+  {
+   "id": "q084",
+   "category": "after",
+   "difficulty": "easy",
+   "scenario": "You keep getting calls and SMS from numbers pretending to be your bank.",
+   "question": "Where can you report suspected fraud calls/SMS in India?",
+   "options": [
+    "Only to your friends",
+    "On a random forum",
+    "Nowhere",
+    "Chakshu on the Sanchar Saathi portal"
+   ],
+   "correctIndex": 3,
+   "explanation": "Chakshu lets you report suspicious calls, SMS and WhatsApp messages to the Department of Telecommunications.",
+   "redFlags": [
+    "repeated fraud calls",
+    "spoofed bank sender"
+   ]
+  },
+  {
+   "id": "q085",
+   "category": "after",
+   "difficulty": "medium",
+   "scenario": "You think extra SIM cards were taken in your name.",
+   "question": "Which official service helps you check?",
+   "options": [
+    "Sanchar Saathi (TAFCOP) to see mobile connections registered in your name",
+    "Google search",
+    "A local shop",
+    "The bank app"
+   ],
+   "correctIndex": 0,
+   "explanation": "Sanchar Saathi shows connections linked to your ID and lets you report unknown ones.",
+   "redFlags": [
+    "unknown SIMs in your name",
+    "SIMs used for fraud"
+   ]
+  },
+  {
+   "id": "q086",
+   "category": "after",
+   "difficulty": "hard",
+   "scenario": "After reporting a scam, someone calls claiming to be a 'cyber recovery agent' who can get your money back for a 10% fee.",
+   "question": "What should you do?",
+   "options": [
+    "Pay — they can help",
+    "Refuse; this is a recovery scam targeting victims — follow up only via 1930 or your police complaint number",
+    "Pay half",
+    "Give your bank login so they can track"
+   ],
+   "correctIndex": 1,
+   "explanation": "Scammers target victims again with fake recovery offers. Real police don't charge to recover money.",
+   "redFlags": [
+    "recovery fee",
+    "unsolicited 'agent'"
+   ]
+  },
+  {
+   "id": "q087",
+   "category": "after",
+   "difficulty": "medium",
+   "scenario": "Your WhatsApp was hijacked and scammers are messaging your contacts.",
+   "question": "What should you do first?",
+   "options": [
+    "Delete your phone",
+    "Create a new WhatsApp on another number",
+    "Re-register WhatsApp on your number, enable two-step verification, and warn contacts",
+    "Ignore it"
+   ],
+   "correctIndex": 2,
+   "explanation": "Re-registering kicks out the attacker; two-step verification prevents it happening again. Warn contacts so they don't pay.",
+   "redFlags": [
+    "hijacked WhatsApp",
+    "friends asked for money"
+   ]
+  },
+  {
+   "id": "q088",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "Late at night you get a call. Your son's voice, crying: 'I've been in an accident, police took my phone, please send ₹50,000 to this number now.'",
+   "question": "What's the safest action?",
+   "options": [
+    "Ask the caller to put a policeman on the line",
+    "Send half now",
+    "Send the money immediately",
+    "Hang up and call your son directly, or ask a family 'safe word' question"
+   ],
+   "correctIndex": 3,
+   "explanation": "AI can clone a voice from a few seconds of audio. Calling your son on his own number or using a family code word reveals the truth. Asking for a 'policeman' just brings another scammer.",
+   "redFlags": [
+    "voice of family in panic",
+    "urgent money",
+    "new number"
+   ]
+  },
+  {
+   "id": "q089",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "Your 'boss' calls on WhatsApp video. The face and voice match, but the video is a bit blurry and they ask you to approve an urgent ₹4 lakh vendor payment.",
+   "question": "What should you do?",
+   "options": [
+    "Verify through a separate known channel (office phone or in person) before any payment",
+    "Ask them to wave their hand",
+    "Approve but email later",
+    "Approve — you can see their face"
+   ],
+   "correctIndex": 0,
+   "explanation": "Deepfake video can copy faces and voices live. Out-of-band verification is the only reliable check; simple gestures can be faked too.",
+   "redFlags": [
+    "deepfake video",
+    "urgent payment",
+    "unusual channel"
+   ]
+  },
+  {
+   "id": "q090",
+   "category": "new",
+   "difficulty": "easy",
+   "scenario": "A poster at a metro station says 'Scan for free ride pass' with a QR code that opens a site asking for card details.",
+   "question": "What is this called and what should you do?",
+   "options": [
+    "A real offer — enter card",
+    "Quishing (QR phishing); don't enter details — use the official app or counter",
+    "A metro ad — scan again",
+    "A survey"
+   ],
+   "correctIndex": 1,
+   "explanation": "QR codes hide the real link. Fake QRs on posters lead to phishing sites. Use official apps or ticket counters.",
+   "redFlags": [
+    "QR on poster",
+    "asks for card details"
+   ]
+  },
+  {
+   "id": "q091",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A parking meter has a QR sticker that opens 'smartpark-pay.xyz' and asks for UPI payment.",
+   "question": "What should you check first?",
+   "options": [
+    "Whether the sticker is colourful",
+    "Nothing — QR on a meter is official",
+    "That the domain/payee matches the official parking authority; otherwise pay through the official method",
+    "The price only"
+   ],
+   "correctIndex": 2,
+   "explanation": "Stickers are easily pasted over official QRs. A random domain or payee is a red flag.",
+   "redFlags": [
+    "sticker QR",
+    "unofficial domain"
+   ]
+  },
+  {
+   "id": "q092",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "Your phone shows repeated 'Approve sign-in?' prompts for your work account at 2 AM. You didn't try to log in.",
+   "question": "What should you do?",
+   "options": [
+    "Turn off notifications",
+    "Ignore it",
+    "Tap Approve to stop the prompts",
+    "Deny all, change your password and report to IT — someone has your password"
+   ],
+   "correctIndex": 3,
+   "explanation": "MFA fatigue/push bombing relies on you approving just to stop the noise. It means your password is already known.",
+   "redFlags": [
+    "repeated MFA prompts",
+    "unrequested sign-in"
+   ]
+  },
+  {
+   "id": "q093",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "After many push prompts, someone calls from 'IT support' saying 'Approve the next one so we can fix your account.'",
+   "question": "What's the best response?",
+   "options": [
+    "Refuse and contact IT via the official helpdesk number yourself",
+    "Ask for their employee ID and then approve",
+    "Approve once only",
+    "Approve as asked"
+   ],
+   "correctIndex": 0,
+   "explanation": "Combining push bombing with a fake helpdesk call is common. Real IT won't ask you to approve unknown logins.",
+   "redFlags": [
+    "call + push prompts",
+    "IT asks for approval"
+   ]
+  },
+  {
+   "id": "q094",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "An email link opens a real Google sign-in page and then shows 'PDF Viewer Pro wants to access your Gmail and Drive'.",
+   "question": "What's the danger?",
+   "options": [
+    "None — it's Google's page",
+    "OAuth consent phishing: allowing gives the app access to your mail and files even without your password",
+    "It's a browser bug",
+    "It will only read PDFs"
+   ],
+   "correctIndex": 1,
+   "explanation": "The login is real, but the permission you grant is to a malicious app. Check app names and requested access carefully, and deny unknown apps.",
+   "redFlags": [
+    "unknown app wants mail access",
+    "consent screen after link"
+   ]
+  },
+  {
+   "id": "q095",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "You discover a 'Mail Assistant' app with full Gmail access in your Google account permissions that you don't remember adding.",
+   "question": "What should you do?",
+   "options": [
+    "Delete Gmail",
+    "Leave it — it might be useful",
+    "Remove its access in account security settings and check for forwarding rules",
+    "Change your wallpaper"
+   ],
+   "correctIndex": 2,
+   "explanation": "Revoking app access stops data theft. Attackers often add forwarding rules too.",
+   "redFlags": [
+    "unknown connected app",
+    "full mail access"
+   ]
+  },
+  {
+   "id": "q096",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "A website pops up a 'Sign in with Google' window. You can't drag it outside the browser window, and the address bar inside it looks slightly off.",
+   "question": "What might this be?",
+   "options": [
+    "A slow internet issue",
+    "A Google update",
+    "A normal pop-up",
+    "Browser-in-the-browser phishing — a fake login window drawn inside the page"
+   ],
+   "correctIndex": 3,
+   "explanation": "Fake windows are made with HTML to look like real pop-ups. Real pop-ups can be moved outside the browser; when unsure, go to the site yourself.",
+   "redFlags": [
+    "window can't leave the browser",
+    "login pop-up"
+   ]
+  },
+  {
+   "id": "q097",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "An email from 'HR' is perfectly written, mentions your actual manager and project, and asks you to review the attached salary revision document by logging in.",
+   "question": "Why is perfect grammar not reassuring?",
+   "options": [
+    "AI can write flawless, personalised phishing; verify via the HR portal you normally use",
+    "Because attachments are always safe",
+    "Because managers never email",
+    "Because HR emails are always bad"
+   ],
+   "correctIndex": 0,
+   "explanation": "AI removes spelling mistakes that once flagged phishing. Use known portals and verify unusual requests.",
+   "redFlags": [
+    "AI-written email",
+    "login link",
+    "salary bait"
+   ]
+  },
+  {
+   "id": "q098",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "A site shows a 'Verify you're human' CAPTCHA that asks you to press Win+R, paste a command, and press Enter.",
+   "question": "What is this?",
+   "options": [
+    "A new CAPTCHA type",
+    "ClickFix — tricking you into running malware on your own computer",
+    "A Windows update",
+    "A speed test"
+   ],
+   "correctIndex": 1,
+   "explanation": "No real CAPTCHA asks you to run commands. The pasted text downloads malware. Close the page.",
+   "redFlags": [
+    "paste a command",
+    "Win+R"
+   ]
+  },
+  {
+   "id": "q099",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A fake 'Chrome error' page says 'Copy this fix code and paste it into PowerShell to repair your browser.'",
+   "question": "What should you do?",
+   "options": [
+    "Restart the computer and paste",
+    "Paste it — it's a fix",
+    "Close the page; never paste commands from websites",
+    "Paste it into Notepad first"
+   ],
+   "correctIndex": 2,
+   "explanation": "These pages trick users into running malicious scripts themselves, bypassing security tools.",
+   "redFlags": [
+    "copy-paste fix",
+    "PowerShell"
+   ]
+  },
+  {
+   "id": "q100",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "Your calendar shows a meeting you didn't accept: 'Payroll update — join here' with a link, from an unknown sender.",
+   "question": "What should you do?",
+   "options": [
+    "Accept the invite",
+    "Forward to all colleagues",
+    "Click the link to join",
+    "Don't click; delete it and change settings so only known senders' invites are added"
+   ],
+   "correctIndex": 3,
+   "explanation": "Malicious calendar invites can appear automatically and carry phishing links.",
+   "redFlags": [
+    "unexpected invite",
+    "link in calendar"
+   ]
+  },
+  {
+   "id": "q101",
+   "category": "new",
+   "difficulty": "easy",
+   "scenario": "An email says 'Your Norton subscription renewed for $399. To cancel, call 1-800-XXX-XXXX.' You don't have Norton.",
+   "question": "What should you do?",
+   "options": [
+    "Ignore — this is callback phishing; check any real subscriptions in your own accounts",
+    "Reply 'cancel'",
+    "Pay to stop it",
+    "Call to cancel"
+   ],
+   "correctIndex": 0,
+   "explanation": "Fake invoices push you to call scammers who then ask for remote access or bank details.",
+   "redFlags": [
+    "fake invoice",
+    "phone number to cancel"
+   ]
+  },
+  {
+   "id": "q102",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A caller after you dial the 'cancel number' says they will refund you but need you to log in to your bank on their screen-share.",
+   "question": "What is happening?",
+   "options": [
+    "A normal refund",
+    "The next step of callback phishing — they want your bank access",
+    "A bank verification",
+    "A courier refund"
+   ],
+   "correctIndex": 1,
+   "explanation": "Refund-by-screen-share is a scam. Hang up and contact your bank on its official number.",
+   "redFlags": [
+    "screen-share refund",
+    "bank login request"
+   ]
+  },
+  {
+   "id": "q103",
+   "category": "new",
+   "difficulty": "easy",
+   "scenario": "SMS: 'Your vehicle KA-01-AB-1234 has an e-challan of ₹500. Pay now at echallan-pay.xyz.'",
+   "question": "What should you do?",
+   "options": [
+    "Call the number in the SMS",
+    "Pay at the link",
+    "Check on the official Parivahan e-challan website or state police site by typing it yourself",
+    "Reply with your vehicle number"
+   ],
+   "correctIndex": 2,
+   "explanation": "Fake e-challan links copy real formats. Official sites end in gov.in. Typing the site yourself is safe.",
+   "redFlags": [
+    "challan link",
+    "unofficial domain"
+   ]
+  },
+  {
+   "id": "q104",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A WhatsApp message from an unknown number says 'Your traffic fine is due. Download eChallan.apk to pay.'",
+   "question": "Why is this risky?",
+   "options": [
+    "It's too slow",
+    "It uses mobile data",
+    "APKs are always safe",
+    "It's malware that can read your OTPs and drain accounts"
+   ],
+   "correctIndex": 3,
+   "explanation": "Government services don't send APKs on WhatsApp. Installing gives scammers control of your phone.",
+   "redFlags": [
+    "APK for fines",
+    "WhatsApp from unknown number"
+   ]
+  },
+  {
+   "id": "q105",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A relative's number sends 'Wedding_Invitation.apk' saying 'Open to see the card.'",
+   "question": "What should you do?",
+   "options": [
+    "Don't install; call the relative to confirm — real invites are images or PDFs, not apps",
+    "Install but deny permissions",
+    "Forward to family",
+    "Install to see the card"
+   ],
+   "correctIndex": 0,
+   "explanation": "Wedding-invite APKs are a common malware trick. Even if the number is real, the account may be hacked.",
+   "redFlags": [
+    "APK as invitation",
+    "hacked contact"
+   ]
+  },
+  {
+   "id": "q106",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "A loan app promises ₹10,000 instantly with 'no documents' but needs access to your contacts and photos.",
+   "question": "What's the risk?",
+   "options": [
+    "None — it's quick",
+    "Fake loan apps misuse contacts/photos to harass and blackmail; use RBI-regulated lenders only",
+    "High interest only",
+    "It's slow"
+   ],
+   "correctIndex": 1,
+   "explanation": "Predatory loan apps extort borrowers by threatening contacts. Check that the lender is RBI-registered.",
+   "redFlags": [
+    "contacts permission",
+    "instant loan no documents"
+   ]
+  },
+  {
+   "id": "q107",
+   "category": "new",
+   "difficulty": "hard",
+   "scenario": "You search 'download AnyDesk' and click the first sponsored result. The site looks official but the URL is anydesk-download.co.",
+   "question": "What is this?",
+   "options": [
+    "A safe partner site",
+    "The official site",
+    "SEO poisoning/malvertising — fake download sites that bundle malware",
+    "A mirror site run by AnyDesk"
+   ],
+   "correctIndex": 2,
+   "explanation": "Attackers buy ads and rank fake sites. Download software only from the official domain you type yourself.",
+   "redFlags": [
+    "sponsored result",
+    "lookalike download site"
+   ]
+  },
+  {
+   "id": "q108",
+   "category": "new",
+   "difficulty": "medium",
+   "scenario": "You receive a WhatsApp voice note from your 'friend' asking for money, but the number is new and the voice sounds slightly robotic.",
+   "question": "What's the best check?",
+   "options": [
+    "Ask them to send another voice note",
+    "Ask them to type a message",
+    "Send money — voice proves it's them",
+    "Call your friend on their usual number before doing anything"
+   ],
+   "correctIndex": 3,
+   "explanation": "AI voice clones can sound convincing. A call on the known number confirms identity.",
+   "redFlags": [
+    "new number",
+    "voice note money request"
+   ]
+  },
+  {
+   "id": "q109",
+   "category": "new",
+   "difficulty": "easy",
+   "scenario": "A QR code in an email says 'Scan to reset your Office password' because 'links are blocked for security'.",
+   "question": "What should you do?",
+   "options": [
+    "Don't scan; go to the official account page yourself — QR in email is used to bypass link filters",
+    "Scan and use a VPN",
+    "Forward to IT and scan later",
+    "Scan it with your phone"
+   ],
+   "correctIndex": 0,
+   "explanation": "QR codes move the attack to your phone where filters don't work. Official resets don't need QR codes.",
+   "redFlags": [
+    "QR in email",
+    "password reset"
+   ]
+  }
+ ]
+}

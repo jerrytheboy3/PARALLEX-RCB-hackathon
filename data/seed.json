@@ -1,0 +1,197 @@
+[
+  {
+    "id": "en-kyc-001",
+    "type": "sms",
+    "sender": "+91 98765 43210",
+    "text": "Dear Customer, your SBI YONO account will be BLOCKED today. Update your PAN/KYC immediately at http://sbi-kyc-verify.xyz/login and share the OTP sent to you to avoid suspension.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "kyc",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-normal-otp-001",
+    "type": "sms",
+    "sender": "VM-SBIINB",
+    "text": "482913 is the OTP for your SBI YONO login. Valid for 5 minutes. Do not share it with anyone. SBI never asks for your OTP, PIN or password. -SBI",
+    "lang": "en",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kn-kyc-001",
+    "type": "sms",
+    "sender": "+91 87654 32109",
+    "text": "ಆತ್ಮೀಯ ಗ್ರಾಹಕರೇ, ನಿಮ್ಮ SBI ಖಾತೆ ಇಂದು ಬ್ಲಾಕ್ ಆಗುತ್ತದೆ. ತಕ್ಷಣ KYC ಅಪ್ಡೇಟ್ ಮಾಡಿ: http://sbi-kyc.top/update ನಂತರ ನಿಮಗೆ ಬಂದ OTP ಅನ್ನು 9876543210 ಸಂಖ್ಯೆಗೆ ತಿಳಿಸಿ.",
+    "lang": "kn",
+    "label": "scam",
+    "scamType": "kyc",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "kanglish-bescom-001",
+    "type": "sms",
+    "sender": "+91 90080 12345",
+    "text": "Namaskara, nimma BESCOM current bill pending ide. Ivattu ratri 9:30 ge power cut aagutte. Takshana 9876543210 ge call maadi illa bill pay maadi.",
+    "lang": "kanglish",
+    "label": "scam",
+    "scamType": "electricity",
+    "expectedLevel": "high"
+  },
+  {
+    "id": "en-courier-001",
+    "type": "sms",
+    "sender": "+44 7911 123456",
+    "text": "India Post: Your parcel is on hold at our warehouse due to an incomplete address. Pay Rs 25 redelivery fee within 12 hours or it will be returned: https://indiapost-redelivery.top/pay",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "courier",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-police-001",
+    "type": "sms",
+    "sender": "+91 76543 21098",
+    "text": "This is CBI Cyber Cell. A parcel in your name contains illegal drugs. You are under digital arrest. Do not tell anyone. Transfer Rs 95,000 to the verification account immediately or face arrest.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "fake_police",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-normal-amazon-001",
+    "type": "sms",
+    "sender": "AX-AMAZON",
+    "text": "Your Amazon order of 'boAt Airdopes 141' has been delivered. Track or return it at https://www.amazon.in/your-orders",
+    "lang": "en",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kanglish-normal-001",
+    "type": "sms",
+    "sender": "+91 99001 12345",
+    "text": "Macha naale sanje 7 ge Koramangala alli meet madona. Movie ticket naane book madtini, amele nange 450 GPay maadu.",
+    "lang": "kanglish",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kn-normal-bescom-001",
+    "type": "sms",
+    "sender": "VM-BESCOM",
+    "text": "ಆತ್ಮೀಯ ಗ್ರಾಹಕರೇ, ನಿಮ್ಮ ಅಕ್ಟೋಬರ್ ತಿಂಗಳ ವಿದ್ಯುತ್ ಬಿಲ್ ಮೊತ್ತ ₹1,240. ಕೊನೆಯ ದಿನಾಂಕ 15-11-2026. ಪಾವತಿಗೆ ಅಧಿಕೃತ BESCOM Mithra ಆಪ್ ಬಳಸಿ.",
+    "lang": "kn",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "en-job-001",
+    "type": "email",
+    "sender": "amazon.hr.recruit@gmail.com",
+    "replyTo": "hr.desk.jobs@outlook.com",
+    "subject": "Congratulations! Selected for Amazon Work From Home",
+    "text": "Dear Candidate, you have been selected for the Amazon work-from-home Data Entry job. Earn Rs 5,000 per day. To confirm your joining, pay a refundable registration fee of Rs 1,999 to our HR UPI ID amazonhr.desk@ybl within 24 hours. Seats are limited.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "job",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "hi-kyc-001",
+    "type": "sms",
+    "sender": "+91 98765 11223",
+    "text": "प्रिय ग्राहक, आपका SBI खाता आज रात ब्लॉक कर दिया जाएगा। तुरंत KYC अपडेट करें: http://sbi-kyc-update.in/login और आपको मिला OTP इस नंबर पर भेजें।",
+    "lang": "hi",
+    "label": "scam",
+    "scamType": "kyc",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "hi-upi-refund-001",
+    "type": "sms",
+    "sender": "+91 91234 56780",
+    "text": "आपका ₹2,499 का रिफंड स्वीकृत हो गया है। रिफंड पाने के लिए PhonePe पर आया collect request स्वीकार करें और अपना UPI PIN डालें। यह ऑफर आज ही समाप्त होगा।",
+    "lang": "hi",
+    "label": "scam",
+    "scamType": "refund",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "hi-lottery-001",
+    "type": "sms",
+    "sender": "+91 70123 45678",
+    "text": "बधाई हो! आपने KBC लॉटरी में ₹25,00,000 का इनाम जीता है। इनाम पाने के लिए ₹4,999 प्रोसेसिंग शुल्क जमा करें: http://kbc-lottery-winner.top",
+    "lang": "hi",
+    "label": "scam",
+    "scamType": "lottery",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "hinglish-electricity-001",
+    "type": "sms",
+    "sender": "9845123456",
+    "text": "Dear customer, aapka bijli bill pending hai. Aaj raat 9:30 baje light kat jayegi. Turant officer ko call karo 9845123456 aur pay karo.",
+    "lang": "hinglish",
+    "label": "scam",
+    "scamType": "electricity",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "hi-normal-otp-001",
+    "type": "sms",
+    "sender": "VM-SBIINB",
+    "text": "आपके SBI YONO लॉगिन के लिए OTP 482913 है। यह 5 मिनट के लिए मान्य है। इसे किसी के साथ साझा न करें। -SBI",
+    "lang": "hi",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "hi-normal-delivery-001",
+    "type": "sms",
+    "sender": "AX-INDPST",
+    "text": "आपका स्पीड पोस्ट EK123456789IN आज डिलीवर कर दिया गया है। इंडिया पोस्ट की सेवा के लिए धन्यवाद।",
+    "lang": "hi",
+    "label": "normal",
+    "expectedLevel": "safe"
+  },
+  {
+    "id": "kn-job-001",
+    "type": "sms",
+    "sender": "+91 99001 22334",
+    "text": "ಅಭಿನಂದನೆಗಳು! ಮನೆಯಿಂದಲೇ ಕೆಲಸ ಮಾಡಿ ದಿನಕ್ಕೆ ₹3,000 ಗಳಿಸಿ. ನೋಂದಣಿ ಶುಲ್ಕವನ್ನು ಪಾವತಿಸಿ ಮತ್ತು ತಕ್ಷಣ ಸೇರಿ: http://wfh-jobs-blr.xyz",
+    "lang": "kn",
+    "label": "scam",
+    "scamType": "job",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-upi-refund-001",
+    "type": "sms",
+    "sender": "+91 90080 01122",
+    "text": "IRCTC: Your ticket refund of Rs 1,860 is pending. To receive it, accept the collect request on Google Pay and enter your UPI PIN within 2 hours.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "refund",
+    "expectedLevel": "high"
+  },
+  {
+    "id": "en-qr-text-001",
+    "type": "sms",
+    "sender": "+91 81230 45678",
+    "text": "Congratulations! You won Rs 5,000 Paytm cashback. Scan the QR code we sent on WhatsApp and enter your UPI PIN to receive the money immediately.",
+    "lang": "en",
+    "label": "scam",
+    "scamType": "lottery",
+    "expectedLevel": "critical"
+  },
+  {
+    "id": "en-normal-bank-alert-001",
+    "type": "sms",
+    "sender": "AD-HDFCBK",
+    "text": "Rs 2,350.00 debited from HDFC Bank A/c XX4012 on 30-10-26 to VPA swiggy@icici. Not you? Call the number on the back of your card.",
+    "lang": "en",
+    "label": "normal",
+    "expectedLevel": "safe"
+  }
+]

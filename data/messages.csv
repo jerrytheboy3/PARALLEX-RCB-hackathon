@@ -1,0 +1,61 @@
+id,channel,language,sender,claimed_org,message,label
+SYN-001,SMS,English,+91-9880011223,BESCOM,"Dear Customer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill. Update via http://192.168.1.55/bescom-pay immediately.",Phishing
+SYN-002,SMS,Kanglish,VK-ALERT,SBI,"Nimma bank account block aagide. Details verify madalu ee link click madi: http://bit.ly/sbi-kyc-update",Phishing
+SYN-003,Email,English,no-reply@onlinesbi.sbi,SBI,"Your monthly e-statement for October 2026 is ready. Log in to your net banking portal directly at onlinesbi.sbi to view your account activity.",Benign
+SYN-004,Email,English,security@sbi-online-portal-update.com,SBI,"URGENT: Unauthorized login detected from unfamiliar device. Send your OTP and password immediately to reset your credentials within 1 hour.",Phishing
+SYN-005,SMS,English,VM-BESCOM,BESCOM,"BESCOM: Scheduled power maintenance in Indiranagar tomorrow from 10 AM to 2 PM. Inconvenience is regretted.",Benign
+SYN-006,SMS,Kanglish,9845012345,KPTCL,"KPTCL Alert: Bill balance pending. Power disconnect aaguthe 2 hours nalli. Stop madalu 9845012345@upi ge pay madi.",Phishing
+SYN-007,SMS,English,+91-9123456789,India Post,"Your parcel IND-9021 cannot be delivered due to incorrect pincode. Click http://indiapost-parcel-redirection.xyz to pay Rs 25 redelivery fee.",Phishing
+SYN-008,SMS,English,AX-INDPOST,India Post,"Consignment EK123456789IN delivered to your address on 30-Oct-2026. Thank you for using India Post.",Benign
+SYN-009,SMS,Kanglish,VK-TRAFFIC,Bengaluru Police,"Traffic Police: Nimma vehicle munde pending e-challan ide. Lok Adalat 50% discount ge pay madi: http://ksp-echallan.top",Phishing
+SYN-010,SMS,English,AD-HDFCBK,HDFC Bank,"Rs 1,450.00 spent on your HDFC Card ending 4012 at Grocery Mart on 30-Oct-26. Available balance Rs 45,200.",Benign
+SYN-011,SMS,Kanglish,9900112233,Amazon,"Part time job offer: Daily earn Rs 3000-5000 online typing work. Start madalu Telegram search @earndaily_blr immediately.",Phishing
+SYN-012,Email,English,billing@bescom.karnataka.gov.in,BESCOM,"Your electricity bill for Account 04291823 is Rs 1,240. Due date is 10-Nov-2026. Pay safely at bescom.karnataka.gov.in.",Benign
+SYN-013,SMS,English,+91-9740012345,Income Tax,"Income Tax Refund approved of Rs 15,400. Update your bank account and PAN details here: http://incometax-refund-gov.in/claim",Phishing
+SYN-014,Email,English,donotreply@incometax.gov.in,Income Tax,"Your Income Tax Return for AY 2026-27 has been successfully verified. Acknowledgement number is 4492019283.",Benign
+SYN-015,SMS,Kanglish,9886001122,BESCOM,"Urgent BESCOM notice: Bill kattilla andre current cut aaguthe. Officer number 9886001122 ge call madi.",Phishing
+SYN-016,SMS,English,BP-AIRTEL,Airtel,"Your Airtel SIM card will be deactivated within 24 hours due to non-KYC submission. Call customer executive on 9123443210 immediately.",Phishing
+SYN-017,SMS,English,AX-AIRTEL,Airtel,"Recharge of Rs 299 successful for your Airtel mobile number. Data: 1.5GB/day, Unlimited Calls. Validity: 28 Days.",Benign
+SYN-018,SMS,Kanglish,9448011234,SBI,"Dear user, SBI reward points worth Rs 4,500 expiring today. Cash redeem madalu click madi: http://sbi-rewards-gift.xyz",Phishing
+SYN-019,SMS,English,VK-ICICIB,ICICI Bank,"ICICI Alert: Your NetBanking access has been suspended due to security reasons. Unlock instantly at http://192.168.0.4/icici-login",Phishing
+SYN-020,SMS,English,VM-ICICIB,ICICI Bank,"OTP for transaction of Rs 500 at Fuel Station is 4921. Valid for 3 mins. Never share OTP with anyone.",Benign
+SYN-021,Email,English,admin@bescom-karnataka-support.com,BESCOM,"FINAL REMINDER: Indiranagar consumer division outstanding bill Rs 4,820. Disconnection order issued. Clear immediately at http://bescom-paybill.top",Phishing
+SYN-022,Email,English,alerts@hdfcbank.net,HDFC Bank,"Security Update: Update your pan card and net banking password within 2 hours or card will be blocked permanently: http://tinyurl.com/hdfc-kyc-fix",Phishing
+SYN-023,Email,English,updates@hdfcbank.com,HDFC Bank,"Your monthly credit card statement for October 2026 has been dispatched to your registered email address.",Benign
+SYN-024,SMS,Kanglish,9731001122,Jio,"Jio 5G Offer: 3 months free recharge activate madalu link click madi: http://jio-free-5g.cc",Phishing
+SYN-025,SMS,English,AX-JIOINF,Jio,"Your daily high speed data quota of 1.5GB is 90% exhausted. Upgrade pack using the MyJio app.",Benign
+SYN-026,SMS,English,+91-9844001199,Bengaluru Police,"Notice: Vehicle KA-01-AB-1234 speeding violation fine Rs 1,000. Pay within 24 hours to avoid court warrant: http://bangalorepolice-fine.click",Phishing
+SYN-027,SMS,English,VM-BLRPOL,Bengaluru Police,"Karnataka State Police advisory: Never share OTP or UPI PIN with unknown callers. Stay vigilant against cyber fraud.",Benign
+SYN-028,SMS,Kanglish,VK-KREDIT,KreditBee,"Loan approved Rs 50,000. Turthu money transfer agalu ee link open madi: http://bit.ly/quick-cash-loan",Phishing
+SYN-029,SMS,English,BW-SWIGGY,Swiggy,"Your Swiggy order from Corner House has been picked up by delivery partner Ramesh. Track live in Swiggy app.",Benign
+SYN-030,SMS,English,+91-9663001100,BlueDart,"BlueDart: Address missing for shipment 98201923. Update address and pay re-routing charge Rs 15 at http://bluedart-tracking-portal.com",Phishing
+SYN-031,SMS,Kanglish,9741002233,PhonePe,"PhonePe lottery: Congratulation! Rs 1,999 cashback win madiddiri. Scratch card open madi: http://phonepe-rewards.top",Phishing
+SYN-032,SMS,English,AX-PHONEPE,PhonePe,"Paid Rs 350 to Green Grocers via PhonePe UPI. Transaction ID T26103019482.",Benign
+SYN-033,Email,English,support@indiapost-gov.in.delivery-track.com,India Post,"Delivery Attempt Failed: Import duties pending Rs 42. Please visit our tracking center to release shipment.",Phishing
+SYN-034,Email,English,no-reply@bescom.karnataka.gov.in,BESCOM,"Receipt acknowledgement: Payment of Rs 1,240 received for Consumer Account 04291823. Transaction successful.",Benign
+SYN-035,SMS,Kanglish,9844112233,KPTCL,"Current disconnect aagutte eega call madi officer Ramesh 9844112233. Unpaid electricity bill update madi.",Phishing
+SYN-036,SMS,English,+91-9008001122,Axis Bank,"Axis Bank Alert: KYC verification pending. Complete Aadhaar linking at http://192.168.10.15/axis to avoid debit freeze.",Phishing
+SYN-037,SMS,English,AX-AXISBK,Axis Bank,"Salary credit of Rs 65,000 to Account ending 8912 on 30-Oct-2026. Available balance Rs 72,400.",Benign
+SYN-038,SMS,Kanglish,9632001122,WhatsApp,"Work from home: YouTube videos like madi daily 2000 earn madi. WhatsApp message madi: https://wa.me/919632001122",Phishing
+SYN-039,SMS,English,VK-AMAZON,Amazon,"Your package with order 402-9182912-192 is out for delivery today. Share delivery code 4821 with driver upon arrival.",Benign
+SYN-040,Email,English,service@onlinesbi-kyc-center.in,SBI,"Dear Account Holder, your debit card access is frozen due to missing PAN card details. Submit verification form immediately: http://onlinesbi-kyc-center.in",Phishing
+SYN-041,SMS,English,+91-9110011223,BESCOM,"Alert: Power supply will be disconnected at 8:00 PM tonight due to unpaid dues of Rs 3,420. Contact nodal officer on 9110011223.",Phishing
+SYN-042,SMS,Kanglish,VK-GOVT,Karnataka Govt,"Gruha Jyothi: Nimma free electricity subsidy cancel aagide. Re-apply madalu ee link click madi: http://sevasindhu-karnataka.xyz",Phishing
+SYN-043,SMS,English,VM-KSPADL,Karnataka Police,"Dial 112 for any emergency in Karnataka. Single emergency number for Police, Fire, and Ambulance.",Benign
+SYN-044,SMS,English,+91-9886112233,FedEx,"FedEx shipment 8819231 held at Bangalore airport customs due to contraband packaging. Pay clearance charge Rs 1,500 immediately: http://fedex-customs-clear.com",Phishing
+SYN-045,SMS,English,AX-FEDEX,FedEx,"Your package 781920192 has been delivered at the front door. Signed by Security.",Benign
+SYN-046,SMS,Kanglish,9980001122,SBI,"Account temporary block aagide. Unlock madalu OTP share madi 9980001122 ge.",Phishing
+SYN-047,SMS,English,AD-SBINB,SBI,"Dear Customer, your NetBanking password was changed successfully on 30-Oct-2026. If not done by you, call 1800112211.",Benign
+SYN-048,SMS,English,+91-9742001122,KPTCL,"URGENT: Outstanding power bill balance. Electrical line will be cut off within 1 hour. Pay now: http://bit.ly/kptcl-quick-bill",Phishing
+SYN-049,SMS,Kanglish,9845223344,Bengaluru Police,"Traffic fine pending. Police station ge barabeku court notice barathe. 500 fine kattalu: http://tinyurl.com/ksp-challan",Phishing
+SYN-050,SMS,English,BW-ZOMATO,Zomato,"Order delivered: Enjoy your meal! Rate your delivery partner Mohan in the Zomato app.",Benign
+SYN-051,Email,English,security-check@hdfc-portal-update.org,HDFC Bank,"High Risk Warning: We detected fraudulent activity on your account. Send your internet banking user ID and OTP to restore access.",Phishing
+SYN-052,SMS,Kanglish,9916001122,BESCOM,"Current bill update aagilla. Disconnection stop madalu ee number ge phone pay madi 9916001122.",Phishing
+SYN-053,SMS,English,AX-ICICIB,ICICI Bank,"Your auto-debit of Rs 2,500 towards broadband bill has been scheduled for 05-Nov-2026.",Benign
+SYN-054,SMS,English,+91-9538001122,India Post,"India Post Notice: Address mismatch for consignment. Pay Rs 18 handling fee to confirm delivery: http://192.168.1.100/post",Phishing
+SYN-055,SMS,Kanglish,VK-WINNER,Paytm,"Paytm Scratch Card: Congratulations! 5000 cashback win madiddiri. UPI pin enter madi claim madi: http://paytm-cashback.top",Phishing
+SYN-056,SMS,English,VM-PAYTM,Paytm,"Payment of Rs 120 to Chai Point successful via Paytm UPI.",Benign
+SYN-057,Email,English,alerts@bescom.karnataka.gov.in,BESCOM,"Dear Indiranagar resident, power scheduled outage tomorrow 11 AM - 1 PM for transformer upgrade.",Benign
+SYN-058,SMS,Kanglish,9686001122,KPTCL,"Bill due amount 2450 ide. Power cut aagade iralu turthu pay madi: http://bit.ly/kptcl-pay",Phishing
+SYN-059,SMS,English,+91-9611001122,SBI,"SBI Security Alert: Unauthorized transaction attempted of Rs 49,999. Cancel transaction immediately by visiting: http://sbi-fraud-cancellation.xyz",Phishing
+SYN-060,SMS,English,AX-SBIINB,SBI,"Dear Customer, your Mandate of Rs 500 for SIP investment is due on 02-Nov-2026.",Benign

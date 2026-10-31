@@ -1,0 +1,1483 @@
+{
+  "_comment": "Organisations TrustLens recognises. NEVER add customer-care phone numbers here: we tell people to use the number printed on their card/bill/passbook or the official app. officialSmsHeaders use '*' for the 2-letter operator prefix (VM-, AD-, JX- ...). Double-check domains/headers before the demo. Orgs with \"region\": \"global\" are international brands often impersonated in scams (no SMS header lists).",
+  "orgs": [
+    {
+      "id": "sbi",
+      "name": "State Bank of India (SBI)",
+      "short": "SBI",
+      "aliases": {
+        "en": [
+          "sbi",
+          "state bank of india",
+          "state bank",
+          "yono",
+          "onlinesbi"
+        ],
+        "kn": [
+          "ಎಸ್‌ಬಿಐ",
+          "ಎಸ್ ಬಿ ಐ",
+          "ಎಸ್ಬಿಐ",
+          "ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್"
+        ],
+        "kanglish": [
+          "state bank nalli",
+          "sbi bank"
+        ],
+        "hi": [
+          "एसबीआई",
+          "स्टेट बैंक"
+        ],
+        "hinglish": [
+          "sbi khata"
+        ]
+      },
+      "officialDomains": [
+        "sbi.co.in",
+        "onlinesbi.sbi",
+        "sbi.bank.in",
+        "sbicard.com"
+      ],
+      "officialSmsHeaders": [
+        "*-SBIINB",
+        "*-SBIBNK",
+        "*-CBSSBI",
+        "*-ATMSBI",
+        "*-SBIPSG",
+        "*-SBYONO"
+      ],
+      "officialApp": "YONO SBI",
+      "verifySteps": [
+        "Open the YONO SBI app yourself (not from a link) and check for any alert.",
+        "KYC is updated only inside the official app, on onlinesbi.sbi typed by you, or at your branch.",
+        "Call the customer-care number printed on your passbook or the back of your debit card.",
+        "SBI never asks for OTP, PIN, CVV or passwords over SMS, call, email or WhatsApp."
+      ]
+    },
+    {
+      "id": "hdfc",
+      "name": "HDFC Bank",
+      "short": "HDFC Bank",
+      "aliases": {
+        "en": [
+          "hdfc",
+          "hdfc bank"
+        ],
+        "kn": [
+          "ಎಚ್‌ಡಿಎಫ್‌ಸಿ",
+          "ಎಚ್ಡಿಎಫ್ಸಿ"
+        ],
+        "kanglish": [
+          "hdfc bank nalli"
+        ],
+        "hi": [
+          "एचडीएफसी"
+        ]
+      },
+      "officialDomains": [
+        "hdfcbank.com",
+        "hdfc.bank.in"
+      ],
+      "officialSmsHeaders": [
+        "*-HDFCBK",
+        "*-HDFCBN"
+      ],
+      "officialApp": "HDFC Bank MobileBanking",
+      "verifySteps": [
+        "Open the HDFC Bank app or NetBanking by typing hdfcbank.com yourself.",
+        "Call the number printed on the back of your HDFC card or in your passbook.",
+        "HDFC Bank never asks for OTP, PIN, CVV or passwords."
+      ]
+    },
+    {
+      "id": "icici",
+      "name": "ICICI Bank",
+      "short": "ICICI Bank",
+      "aliases": {
+        "en": [
+          "icici",
+          "icici bank",
+          "imobile"
+        ],
+        "kn": [
+          "ಐಸಿಐಸಿಐ"
+        ],
+        "kanglish": [],
+        "hi": [
+          "आईसीआईसीआई"
+        ]
+      },
+      "officialDomains": [
+        "icicibank.com",
+        "icici.bank.in"
+      ],
+      "officialSmsHeaders": [
+        "*-ICICIB",
+        "*-ICICIT"
+      ],
+      "officialApp": "iMobile Pay by ICICI Bank",
+      "verifySteps": [
+        "Check your account in the iMobile Pay app opened by you.",
+        "Call the number printed on your ICICI card or passbook.",
+        "ICICI Bank never asks for OTP, PIN, CVV or passwords."
+      ]
+    },
+    {
+      "id": "axis",
+      "name": "Axis Bank",
+      "short": "Axis Bank",
+      "aliases": {
+        "en": [
+          "axis bank",
+          "axisbank"
+        ],
+        "kn": [
+          "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್"
+        ],
+        "kanglish": [],
+        "hi": [
+          "एक्सिस बैंक"
+        ]
+      },
+      "officialDomains": [
+        "axisbank.com",
+        "axis.bank.in"
+      ],
+      "officialSmsHeaders": [
+        "*-AXISBK"
+      ],
+      "officialApp": "Axis Mobile (open by Axis Bank)",
+      "verifySteps": [
+        "Check alerts inside the official Axis Bank app opened by you.",
+        "Call the number printed on your Axis card or passbook.",
+        "Axis Bank never asks for OTP, PIN, CVV or passwords."
+      ]
+    },
+    {
+      "id": "kotak",
+      "name": "Kotak Mahindra Bank",
+      "short": "Kotak",
+      "aliases": {
+        "en": [
+          "kotak",
+          "kotak mahindra",
+          "kotak811"
+        ],
+        "kn": [
+          "ಕೋಟಕ್"
+        ],
+        "kanglish": [],
+        "hi": [
+          "कोटक"
+        ]
+      },
+      "officialDomains": [
+        "kotak.com",
+        "kotak.bank.in"
+      ],
+      "officialSmsHeaders": [
+        "*-KOTAKB"
+      ],
+      "officialApp": "Kotak Mobile Banking / Kotak811",
+      "verifySteps": [
+        "Check inside the official Kotak app opened by you.",
+        "Call the number printed on your Kotak card or passbook.",
+        "Kotak never asks for OTP, PIN, CVV or passwords."
+      ]
+    },
+    {
+      "id": "bescom",
+      "name": "BESCOM (Bangalore Electricity)",
+      "short": "BESCOM",
+      "aliases": {
+        "en": [
+          "bescom",
+          "electricity board",
+          "bangalore electricity"
+        ],
+        "kn": [
+          "ಬೆಸ್ಕಾಂ",
+          "ವಿದ್ಯುತ್ ಸರಬರಾಜು",
+          "ವಿದ್ಯುತ್ ಬಿಲ್"
+        ],
+        "kanglish": [
+          "current bill",
+          "karent bill",
+          "current bil",
+          "bescam",
+          "kebi",
+          "keb"
+        ],
+        "hi": [
+          "बेस्कॉम"
+        ],
+        "hinglish": [
+          "bijli bill",
+          "light bill"
+        ]
+      },
+      "officialDomains": [
+        "bescom.karnataka.gov.in",
+        "bescom.co.in"
+      ],
+      "officialSmsHeaders": [
+        "*-BESCOM",
+        "*-BESCOMS"
+      ],
+      "officialApp": "BESCOM Mithra",
+      "verifySteps": [
+        "Check your bill in the BESCOM Mithra app or on the official BESCOM website, typed in yourself.",
+        "Call the helpline printed on your paper electricity bill — not a number from the SMS.",
+        "BESCOM does not cut power at night because of an SMS from a personal mobile number.",
+        "Pay only through the official app, website or a BESCOM counter."
+      ]
+    },
+    {
+      "id": "indiapost",
+      "name": "India Post",
+      "short": "India Post",
+      "aliases": {
+        "en": [
+          "india post",
+          "indiapost",
+          "speed post",
+          "post office",
+          "indian post"
+        ],
+        "kn": [
+          "ಭಾರತೀಯ ಅಂಚೆ",
+          "ಅಂಚೆ ಇಲಾಖೆ",
+          "ಸ್ಪೀಡ್ ಪೋಸ್ಟ್"
+        ],
+        "kanglish": [
+          "post office inda",
+          "speed post alli"
+        ],
+        "hi": [
+          "इंडिया पोस्ट",
+          "भारतीय डाक",
+          "डाक विभाग",
+          "स्पीड पोस्ट"
+        ]
+      },
+      "officialDomains": [
+        "indiapost.gov.in"
+      ],
+      "officialSmsHeaders": [
+        "*-INDPST",
+        "*-DOPBNK"
+      ],
+      "officialApp": "Post Info (India Post)",
+      "verifySteps": [
+        "Track the article yourself on indiapost.gov.in using the tracking number on your receipt.",
+        "India Post does not ask for small 'redelivery' or 'address update' fees through SMS links.",
+        "Visit your nearest post office if you are unsure."
+      ]
+    },
+    {
+      "id": "bluedart",
+      "name": "Blue Dart",
+      "short": "Blue Dart",
+      "aliases": {
+        "en": [
+          "blue dart",
+          "bluedart"
+        ],
+        "kn": [
+          "ಬ್ಲೂ ಡಾರ್ಟ್"
+        ],
+        "kanglish": [],
+        "hi": [
+          "ब्लू डार्ट"
+        ]
+      },
+      "officialDomains": [
+        "bluedart.com"
+      ],
+      "officialSmsHeaders": [
+        "*-BLUDRT",
+        "*-BLUEDT"
+      ],
+      "officialApp": "Blue Dart website (track by AWB number)",
+      "verifySteps": [
+        "Track your parcel on bluedart.com using the waybill number from the seller's app.",
+        "Couriers do not ask for UPI payments or OTPs to 'release' a parcel.",
+        "Check the order inside the shopping app you bought from."
+      ]
+    },
+    {
+      "id": "delhivery",
+      "name": "Delhivery",
+      "short": "Delhivery",
+      "aliases": {
+        "en": [
+          "delhivery"
+        ],
+        "kn": [
+          "ಡೆಲ್ಲಿವರಿ"
+        ],
+        "kanglish": [
+          "delhivary"
+        ],
+        "hi": [
+          "डेल्हीवरी"
+        ]
+      },
+      "officialDomains": [
+        "delhivery.com"
+      ],
+      "officialSmsHeaders": [
+        "*-DLHVRY",
+        "*-DELHVY"
+      ],
+      "officialApp": "Delhivery app",
+      "verifySteps": [
+        "Track the shipment on delhivery.com or in the shopping app you ordered from.",
+        "Couriers do not ask for extra fees through SMS links.",
+        "Never share an OTP with a delivery agent unless you are physically receiving the parcel."
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "short": "Amazon",
+      "aliases": {
+        "en": [
+          "amazon",
+          "amazon.in",
+          "amazon pay"
+        ],
+        "kn": [
+          "ಅಮೆಜಾನ್"
+        ],
+        "kanglish": [
+          "amezon",
+          "amazone"
+        ],
+        "hi": [
+          "अमेज़न",
+          "अमेज़ॉन",
+          "अमेजन"
+        ]
+      },
+      "officialDomains": [
+        "amazon.in",
+        "amazon.com",
+        "amazonpay.in"
+      ],
+      "officialSmsHeaders": [
+        "*-AMAZON",
+        "*-AMZNIN",
+        "*-AMAZNP"
+      ],
+      "officialApp": "Amazon Shopping",
+      "verifySteps": [
+        "Open the Amazon app yourself and check 'Your Orders'.",
+        "Amazon does not hire through WhatsApp/Telegram or ask for registration fees.",
+        "Contact Amazon only through 'Customer Service' inside the app."
+      ]
+    },
+    {
+      "id": "flipkart",
+      "name": "Flipkart",
+      "short": "Flipkart",
+      "aliases": {
+        "en": [
+          "flipkart"
+        ],
+        "kn": [
+          "ಫ್ಲಿಪ್‌ಕಾರ್ಟ್",
+          "ಫ್ಲಿಪ್ಕಾರ್ಟ್"
+        ],
+        "kanglish": [
+          "flipcart"
+        ],
+        "hi": [
+          "फ्लिपकार्ट"
+        ]
+      },
+      "officialDomains": [
+        "flipkart.com"
+      ],
+      "officialSmsHeaders": [
+        "*-FLPKRT",
+        "*-FKRTIN"
+      ],
+      "officialApp": "Flipkart",
+      "verifySteps": [
+        "Open the Flipkart app yourself and check 'My Orders'.",
+        "Use 'Help Centre' inside the app — not numbers from messages or search results.",
+        "Flipkart does not run lucky draws that need you to pay a fee."
+      ]
+    },
+    {
+      "id": "paytm",
+      "name": "Paytm",
+      "short": "Paytm",
+      "aliases": {
+        "en": [
+          "paytm"
+        ],
+        "kn": [
+          "ಪೇಟಿಎಂ"
+        ],
+        "kanglish": [
+          "paytym"
+        ],
+        "hi": [
+          "पेटीएम"
+        ]
+      },
+      "officialDomains": [
+        "paytm.com",
+        "paytmbank.com"
+      ],
+      "officialSmsHeaders": [
+        "*-PAYTMB",
+        "*-iPaytm",
+        "*-PYTMSM"
+      ],
+      "officialApp": "Paytm",
+      "verifySteps": [
+        "Open the Paytm app yourself and check notifications.",
+        "KYC for wallets is done only inside the app — never via a link or a call.",
+        "Never enter your UPI PIN to 'receive' money."
+      ]
+    },
+    {
+      "id": "phonepe",
+      "name": "PhonePe",
+      "short": "PhonePe",
+      "aliases": {
+        "en": [
+          "phonepe",
+          "phone pe"
+        ],
+        "kn": [
+          "ಫೋನ್‌ಪೇ",
+          "ಫೋನ್ ಪೇ"
+        ],
+        "kanglish": [
+          "phonepay",
+          "phone pay"
+        ],
+        "hi": [
+          "फोनपे",
+          "फ़ोनपे",
+          "फोन पे"
+        ]
+      },
+      "officialDomains": [
+        "phonepe.com"
+      ],
+      "officialSmsHeaders": [
+        "*-PHONPE",
+        "*-PHPAY"
+      ],
+      "officialApp": "PhonePe",
+      "verifySteps": [
+        "Open the PhonePe app yourself and check 'History'.",
+        "A UPI PIN is only ever needed to SEND money, never to receive it.",
+        "Use 'Help' inside the app for support."
+      ]
+    },
+    {
+      "id": "gpay",
+      "name": "Google Pay",
+      "short": "Google Pay",
+      "aliases": {
+        "en": [
+          "google pay",
+          "gpay",
+          "g pay"
+        ],
+        "kn": [
+          "ಗೂಗಲ್ ಪೇ",
+          "ಜಿಪೇ"
+        ],
+        "kanglish": [
+          "gpay maadi",
+          "g-pay"
+        ],
+        "hi": [
+          "गूगल पे"
+        ]
+      },
+      "officialDomains": [
+        "pay.google.com",
+        "google.com"
+      ],
+      "officialSmsHeaders": [
+        "*-GOOGPY",
+        "*-GPAYIN"
+      ],
+      "officialApp": "Google Pay",
+      "verifySteps": [
+        "Open Google Pay yourself and check the transaction history.",
+        "A UPI PIN is only needed to SEND money, never to receive it.",
+        "Decline collect requests from people you don't know."
+      ]
+    },
+    {
+      "id": "irctc",
+      "name": "IRCTC (Indian Railways)",
+      "short": "IRCTC",
+      "aliases": {
+        "en": [
+          "irctc",
+          "indian railways",
+          "rail connect"
+        ],
+        "kn": [
+          "ಐಆರ್‌ಸಿಟಿಸಿ",
+          "ಭಾರತೀಯ ರೈಲ್ವೆ"
+        ],
+        "kanglish": [],
+        "hi": [
+          "आईआरसीटीसी",
+          "भारतीय रेलवे"
+        ]
+      },
+      "officialDomains": [
+        "irctc.co.in",
+        "indianrail.gov.in"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "IRCTC Rail Connect",
+      "verifySteps": [
+        "Open the IRCTC Rail Connect app or type irctc.co.in yourself and check your booking history.",
+        "Ticket refunds go back automatically to the account you paid from — no form, fee or OTP is needed.",
+        "IRCTC never asks for your OTP, UPI PIN or card details over a call or message."
+      ]
+    },
+    {
+      "id": "irs",
+      "name": "Internal Revenue Service (US)",
+      "short": "IRS",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "irs",
+          "internal revenue service",
+          "irs department"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "irs.gov"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official IRS app, or type irs.gov yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "IRS never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "usps",
+      "name": "US Postal Service",
+      "short": "USPS",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "usps",
+          "us postal service",
+          "postal service"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "usps.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official USPS app, or type usps.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "USPS never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "ups",
+      "name": "UPS",
+      "short": "UPS",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "ups notice",
+          "ups delivery",
+          "ups package",
+          "ups parcel",
+          "ups shipment",
+          "ups store"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "ups.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official UPS app, or type ups.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "UPS never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "fedex",
+      "name": "FedEx",
+      "short": "FedEx",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "fedex",
+          "fed ex"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "fedex.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official FedEx app, or type fedex.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "FedEx never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "dhl",
+      "name": "DHL",
+      "short": "DHL",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "dhl",
+          "dhl express"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "dhl.com",
+        "dhl.co.in"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official DHL app, or type dhl.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "DHL never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "royalmail",
+      "name": "Royal Mail",
+      "short": "Royal Mail",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "royal mail"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "royalmail.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official Royal Mail app, or type royalmail.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Royal Mail never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "canadapost",
+      "name": "Canada Post",
+      "short": "Canada Post",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "canada post"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "canadapost-postescanada.ca",
+        "canadapost.ca"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official Canada Post app, or type canadapost-postescanada.ca yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Canada Post never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "ontrac",
+      "name": "OnTrac",
+      "short": "OnTrac",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "ontrac"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "ontrac.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official OnTrac app, or type ontrac.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "OnTrac never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "short": "PayPal",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "paypal",
+          "pay pal"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "paypal.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "PayPal",
+      "verifySteps": [
+        "Open the official PayPal app, or type paypal.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "PayPal never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "chase",
+      "name": "JPMorgan Chase",
+      "short": "Chase",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "chase bank",
+          "jpmorgan chase",
+          "your chase",
+          "chase account",
+          "chase card"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "chase.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Chase Mobile",
+      "verifySteps": [
+        "Open the official Chase Mobile app, or type chase.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Chase never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "wellsfargo",
+      "name": "Wells Fargo",
+      "short": "Wells Fargo",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "wells fargo"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "wellsfargo.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Wells Fargo Mobile",
+      "verifySteps": [
+        "Open the official Wells Fargo Mobile app, or type wellsfargo.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Wells Fargo never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "bofa",
+      "name": "Bank of America",
+      "short": "Bank of America",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "bank of america",
+          "bofa"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "bankofamerica.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Bank of America",
+      "verifySteps": [
+        "Open the official Bank of America app, or type bankofamerica.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Bank of America never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "citi",
+      "name": "Citibank",
+      "short": "Citi",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "citi",
+          "citibank",
+          "citi bank"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "citi.com",
+        "citibank.com",
+        "online.citi.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Citi Mobile",
+      "verifySteps": [
+        "Open the official Citi Mobile app, or type citi.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Citi never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "capitalone",
+      "name": "Capital One",
+      "short": "Capital One",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "capital one"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "capitalone.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Capital One",
+      "verifySteps": [
+        "Open the official Capital One app, or type capitalone.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Capital One never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "venmo",
+      "name": "Venmo",
+      "short": "Venmo",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "venmo"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "venmo.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Venmo",
+      "verifySteps": [
+        "Open the official Venmo app, or type venmo.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Venmo never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "zelle",
+      "name": "Zelle",
+      "short": "Zelle",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "zelle"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "zellepay.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "your bank",
+      "verifySteps": [
+        "Open the official your bank app, or type zellepay.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Zelle never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "chime",
+      "name": "Chime",
+      "short": "Chime",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "chime account",
+          "chime bank",
+          "chime card",
+          "your chime"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "chime.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Chime",
+      "verifySteps": [
+        "Open the official Chime app, or type chime.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Chime never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "revolut",
+      "name": "Revolut",
+      "short": "Revolut",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "revolut"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "revolut.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Revolut",
+      "verifySteps": [
+        "Open the official Revolut app, or type revolut.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Revolut never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "tdbank",
+      "name": "TD Bank",
+      "short": "TD Bank",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "td bank"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "td.com",
+        "tdbank.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "TD Bank",
+      "verifySteps": [
+        "Open the official TD Bank app, or type td.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "TD Bank never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "usbank",
+      "name": "U.S. Bank",
+      "short": "U.S. Bank",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "us bank",
+          "u.s. bank"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "usbank.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "U.S. Bank Mobile",
+      "verifySteps": [
+        "Open the official U.S. Bank Mobile app, or type usbank.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "U.S. Bank never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "pnc",
+      "name": "PNC Bank",
+      "short": "PNC",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "pnc",
+          "pnc bank"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "pnc.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "PNC Mobile",
+      "verifySteps": [
+        "Open the official PNC Mobile app, or type pnc.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "PNC never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "short": "Apple",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "applecare",
+          "apple id",
+          "apple support",
+          "icloud",
+          "apple account"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "apple.com",
+        "icloud.com"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Settings → Apple ID",
+      "verifySteps": [
+        "Open the official Settings → Apple ID app, or type apple.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Apple never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "short": "Microsoft",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "microsoft",
+          "outlook account",
+          "microsoft 365",
+          "office 365"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "microsoft.com",
+        "live.com",
+        "outlook.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official Microsoft app, or type microsoft.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Microsoft never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "norton",
+      "name": "Norton",
+      "short": "Norton",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "norton lifelock",
+          "norton antivirus",
+          "norton 360",
+          "norton"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "norton.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official Norton app, or type norton.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Norton never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "mcafee",
+      "name": "McAfee",
+      "short": "McAfee",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "mcafee"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "mcafee.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official McAfee app, or type mcafee.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "McAfee never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "bestbuy",
+      "name": "Best Buy / Geek Squad",
+      "short": "Best Buy",
+      "region": "global",
+      "aliases": {
+        "en": [
+          "best buy",
+          "bestbuy",
+          "geek squad",
+          "geeksquad"
+        ],
+        "kn": [],
+        "kanglish": [],
+        "hi": []
+      },
+      "officialDomains": [
+        "bestbuy.com",
+        "geeksquad.com"
+      ],
+      "officialSmsHeaders": [],
+      "verifySteps": [
+        "Open the official Best Buy app, or type bestbuy.com yourself — never use the link or number in the message.",
+        "Sign in there and check for any alert, charge or parcel yourself.",
+        "Best Buy never asks for your password, one-time code or card details by text or call."
+      ]
+    },
+    {
+      "id": "npci",
+      "name": "NPCI / UPI",
+      "short": "UPI",
+      "generic": true,
+      "aliases": {
+        "en": [
+          "upi",
+          "npci",
+          "bhim",
+          "upi id",
+          "upi pin"
+        ],
+        "kn": [
+          "ಯುಪಿಐ"
+        ],
+        "kanglish": [],
+        "hi": [
+          "यूपीआई"
+        ]
+      },
+      "officialDomains": [
+        "npci.org.in",
+        "bhimupi.org.in"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": "Your bank's UPI app (BHIM, Google Pay, PhonePe, Paytm …)",
+      "verifySteps": [
+        "Entering your UPI PIN always SENDS money — you never need it to receive money.",
+        "Scanning a QR code also only sends money. 'Scan to receive' is always a scam.",
+        "Reject unknown 'collect' requests inside your UPI app."
+      ]
+    },
+    {
+      "id": "incometax",
+      "name": "Income Tax Department",
+      "short": "Income Tax Dept",
+      "aliases": {
+        "en": [
+          "income tax",
+          "it department",
+          "income-tax",
+          "tax refund",
+          "itr refund",
+          "it refund"
+        ],
+        "kn": [
+          "ಆದಾಯ ತೆರಿಗೆ"
+        ],
+        "kanglish": [
+          "income tax refund bandide"
+        ],
+        "hi": [
+          "आयकर",
+          "इनकम टैक्स"
+        ]
+      },
+      "officialDomains": [
+        "incometax.gov.in",
+        "incometaxindia.gov.in"
+      ],
+      "officialSmsHeaders": [
+        "*-ITDEPT",
+        "*-CPCITR",
+        "*-ITDCPC"
+      ],
+      "officialApp": "AIS for Taxpayer / e-filing portal",
+      "verifySteps": [
+        "Log in yourself at incometax.gov.in to see refund status — it is never 'released' via a link.",
+        "The department never asks for card details, OTP or a fee to process a refund.",
+        "Refunds go straight to your pre-validated bank account."
+      ]
+    },
+    {
+      "id": "uidai",
+      "name": "UIDAI (Aadhaar)",
+      "short": "Aadhaar/UIDAI",
+      "aliases": {
+        "en": [
+          "uidai",
+          "aadhaar",
+          "aadhar",
+          "adhaar",
+          "maadhaar"
+        ],
+        "kn": [
+          "ಆಧಾರ್"
+        ],
+        "kanglish": [
+          "adhar card",
+          "aadhar card"
+        ],
+        "hi": [
+          "आधार",
+          "यूआईडीएआई"
+        ]
+      },
+      "officialDomains": [
+        "uidai.gov.in",
+        "myaadhaar.uidai.gov.in"
+      ],
+      "officialSmsHeaders": [
+        "*-AADHAR",
+        "*-UIDAI"
+      ],
+      "officialApp": "mAadhaar",
+      "verifySteps": [
+        "Update Aadhaar only at myaadhaar.uidai.gov.in (typed by you) or an Aadhaar Seva Kendra.",
+        "UIDAI never asks for your Aadhaar OTP over a call or message.",
+        "Lock your biometrics in the mAadhaar app if you think your number was misused."
+      ]
+    },
+    {
+      "id": "police",
+      "name": "Police / CBI / Cyber Crime",
+      "short": "police/CBI",
+      "aliases": {
+        "en": [
+          "police",
+          "cbi",
+          "cyber cell",
+          "cyber crime",
+          "crime branch",
+          "customs",
+          "narcotics",
+          "ncb",
+          "enforcement directorate",
+          "trai",
+          "digital arrest"
+        ],
+        "kn": [
+          "ಪೊಲೀಸ್",
+          "ಸಿಬಿಐ",
+          "ಸೈಬರ್ ಕ್ರೈಂ",
+          "ಡಿಜಿಟಲ್ ಅರೆಸ್ಟ್"
+        ],
+        "kanglish": [
+          "polisu",
+          "police station inda"
+        ],
+        "hi": [
+          "पुलिस",
+          "सीबीआई",
+          "साइबर सेल",
+          "डिजिटल अरेस्ट"
+        ]
+      },
+      "officialDomains": [
+        "cybercrime.gov.in",
+        "cbi.gov.in",
+        "ksp.karnataka.gov.in"
+      ],
+      "officialSmsHeaders": [],
+      "officialApp": null,
+      "verifySteps": [
+        "'Digital arrest' does not exist. Police, CBI, customs or TRAI never arrest anyone over a video call or message.",
+        "Hang up. Do not stay on a call, do not install any app they ask for, do not move money to 'verify' it.",
+        "Talk to family, then visit your local police station in person or call 1930 if you lost money."
+      ]
+    },
+    {
+      "id": "jio",
+      "name": "Jio",
+      "short": "Jio",
+      "aliases": {
+        "en": [
+          "jio",
+          "reliance jio",
+          "myjio"
+        ],
+        "kn": [
+          "ಜಿಯೋ"
+        ],
+        "kanglish": [],
+        "hi": [
+          "जियो"
+        ]
+      },
+      "officialDomains": [
+        "jio.com"
+      ],
+      "officialSmsHeaders": [
+        "*-JIOINF",
+        "*-JIOPAY",
+        "*-JIONET"
+      ],
+      "officialApp": "MyJio",
+      "verifySteps": [
+        "Check your plan and KYC inside the MyJio app opened by you.",
+        "Jio does not block SIMs over SMS for 'KYC pending' and never asks you to call a mobile number.",
+        "Visit a Jio store with ID if you really need to update details."
+      ]
+    },
+    {
+      "id": "airtel",
+      "name": "Airtel",
+      "short": "Airtel",
+      "aliases": {
+        "en": [
+          "airtel",
+          "airtel thanks"
+        ],
+        "kn": [
+          "ಏರ್‌ಟೆಲ್",
+          "ಏರ್ಟೆಲ್"
+        ],
+        "kanglish": [],
+        "hi": [
+          "एयरटेल"
+        ]
+      },
+      "officialDomains": [
+        "airtel.in"
+      ],
+      "officialSmsHeaders": [
+        "*-AIRTEL",
+        "*-AIRMTA"
+      ],
+      "officialApp": "Airtel Thanks",
+      "verifySteps": [
+        "Check your account in the Airtel Thanks app opened by you.",
+        "Airtel never asks for OTPs or remote-access apps to 'fix KYC'.",
+        "Visit an Airtel store with ID if you really need to update details."
+      ]
+    },
+    {
+      "id": "job",
+      "name": "Job / recruitment offer",
+      "short": "job offer",
+      "generic": true,
+      "aliases": {
+        "en": [
+          "job offer",
+          "hiring",
+          "recruitment",
+          "work from home",
+          "work-from-home",
+          "part time job",
+          "part-time job",
+          "data entry job",
+          "hr team",
+          "joining fee",
+          "registration fee"
+        ],
+        "kn": [
+          "ಉದ್ಯೋಗ",
+          "ಕೆಲಸ ಖಾಲಿ"
+        ],
+        "kanglish": [
+          "kelsa ide",
+          "job ide",
+          "part time kelsa"
+        ],
+        "hi": [
+          "नौकरी",
+          "वर्क फ्रॉम होम",
+          "पार्ट टाइम"
+        ],
+        "hinglish": [
+          "ghar baithe",
+          "part time naukri"
+        ]
+      },
+      "officialDomains": [],
+      "officialSmsHeaders": [],
+      "officialApp": null,
+      "verifySteps": [
+        "Real employers never charge a registration, training or 'refundable' joining fee.",
+        "Find the job on the company's official careers page yourself — not via WhatsApp/Telegram links.",
+        "Don't share Aadhaar, PAN or bank details before you have a verified written offer."
+      ]
+    }
+  ]
+}
